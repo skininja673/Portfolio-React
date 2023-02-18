@@ -1,0 +1,56 @@
+.footer {
+    width: 100%;
+    min-height: 200px;
+    background: var(--blueColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-top: 140px;
+}
+
+.socialMedia svg {
+    color: var(--whiteColor);
+    margin: 20px;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+.footer p {
+    color: var(--whiteColor);
+    letter-spacing: 1.3px;
+}
+
+.collegeLink {
+    text-decoration: none;
+    margin: 0px 2px;
+    font-size: 1.2rem;
+    color: var(--orangeColor);
+    padding: 5px;
+    border-bottom: 1px dotted var(--orangeColor);
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+@media only screen and (max-width: 600px) {
+    .footer svg {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 363px) {
+    .socialMedia svg {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 363px) {
+    .socialMedia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+}

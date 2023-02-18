@@ -1,0 +1,12 @@
+.wrapper {
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrapper h1 {
+    color: var(--lightBlueColor);
+    font-size: 35px;
+    text-align: center;
+}

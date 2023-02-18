@@ -1,0 +1,100 @@
+.home {
+    width: 100%;
+    align-items: center;
+    font-family: var(--familyArial);
+    color: var(--lightBlueColor);
+}
+
+.about {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--blueColor);
+    color: var(--whiteColor);
+}
+
+.about h2 {
+    font-family: var(--familySegoe);
+    font-size: 80px;
+    color: var(--yellowColor);
+    height: 50px;
+}
+
+.about .prompt {
+    width: 40%;
+    font-size: 30px;
+}
+
+.skills {
+    font-size: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills h1 {
+    color: var(--lightBlueColor);
+}
+
+.skills .list {
+    list-style: none;
+    width: 60%;
+}
+
+.list span {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 824px) {
+    .about h2 {
+        font-size: 42px;
+    }
+    .about .prompt {
+        font-size: 30px;
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .about .prompt {
+        margin-top: 10px;
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .skills {
+        text-align: center;
+    }
+    .list {
+        padding: 0;
+    }
+
+    .skills h2 {
+        font-size: 35px;
+    }
+
+    .skills h1 {
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width: 227px) {
+    .about h2 {
+        /* border: 2px solid red; */
+        font-size: 30px;
+    }
+    .about .prompt {
+        font-size: 20px;
+        width: 85%;
+    }
+}
