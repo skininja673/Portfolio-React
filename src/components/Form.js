@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormDisclaimer } from '../helpers/Data';
+// import { FormDisclaimer } from '../helpers/Data';
 
 const Form = () => {
     const handleSubmit = () => {
