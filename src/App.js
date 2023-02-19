@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import ProjectDisplay from './pages/ProjectDisplay';
 import ContactForm from './pages/ContactForm';
 import Experience from './pages/Experience';
-// import ErrorPage from './pages/ErrorPage';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
     return (
@@ -20,7 +20,7 @@ function App() {
                     <Route path='/project/:id' element={<ProjectDisplay />} />
                     <Route path='/experience' element={<Experience />} />
                     <Route path='/contact' element={<ContactForm />} />
-                    {/* <Route path='*' element={<ErrorPage />} /> */}
+                    <Route path='*' element={<ErrorPage />} />
                 </Routes>
                 <Footer />
             </Router>
