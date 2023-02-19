@@ -3,7 +3,7 @@ import { FormDisclaimer } from '../helpers/Data';
 
 const Form = () => {
     return (
-        <form name='contact' method='post' data-netlify='true'>
+        <form name='contact' method='post' netlify='true'>
             <input type='hidden' name='form-name' value='contact' />
 
             <input
