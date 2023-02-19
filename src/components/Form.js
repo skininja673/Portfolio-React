@@ -1,26 +1,12 @@
 import React from 'react';
-// import { FormDisclaimer } from '../helpers/Data';
+import { FormDisclaimer } from '../helpers/Data';
 
 const Form = () => {
-    const handleSubmit = () => {
-        console.log('handled submit');
-    };
     return (
-        <form
-            name='contact'
-            method='post'
-            data-netlify='true'
-            onSubmit={handleSubmit}
-        >
+        <form name='contact' method='post' data-netlify='true'>
             <input type='hidden' name='form-name' value='contact' />
 
-            <input type='hidden' name='form-name' value='pizzaOrder' />
-            <label>
-                What order did the pizza give to the pineapple?
-                <input name='order' type='text' />
-            </label>
-
-            {/* <input
+            <input
                 type='text'
                 name='name'
                 placeholder='Name: '
@@ -38,7 +24,7 @@ const Form = () => {
                 id=''
                 placeholder={`Message: ${FormDisclaimer}`}
                 className='styleMe'
-            ></textarea> */}
+            ></textarea>
             <button
                 type='submit'
                 // value='Send Message'
