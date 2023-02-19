@@ -8,7 +8,6 @@ const ContactForm = () => {
     return (
         <section className='contact' id='contact'>
             <div className='heading'>
-                <p>Feel free to contact me anytime</p>
                 <h2>Get in Touch</h2>
             </div>
 

@@ -116,6 +116,12 @@
         display: flex;
         flex-direction: column;
     }
+    .heading h2 {
+        margin: 0;
+    }
+    .formBx {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
