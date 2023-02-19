@@ -10,7 +10,7 @@ function ProjectDisplay() {
 
     return (
         <section className='project'>
-            <Link to={'/Projects'} className='btn' id='back-btn'>
+            <Link to={'/projects'} className='btn' id='back-btn'>
                 Back
             </Link>
             <h1> {name}</h1>
