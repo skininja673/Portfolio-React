@@ -86,8 +86,24 @@
 }
 
 /* ---------------------------- */
+@media only screen and (max-width: 1146px) {
+    .content .formBx {
+        width: 100%;
+    }
+    .formBx .styleMe {
+        width: 100%;
+    }
+}
 
 @media only screen and (max-width: 900px) {
+    .contact {
+        width: 98%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
     .contactInfoBx {
         display: flex;
         flex-direction: column;

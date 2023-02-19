@@ -22,7 +22,7 @@ function Home() {
                 <ol className='list'>
                     <li className='item'>
                         <h3> Who am i ?</h3>
-                        <span> {aboutMe}</span>
+                        <span className='intro'> {aboutMe}</span>
                     </li>
                 </ol>
                 <Link to={'/projects'} className='btn'>

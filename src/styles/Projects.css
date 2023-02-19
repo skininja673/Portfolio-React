@@ -80,18 +80,21 @@
     .projectList {
         grid-template-columns: 1fr;
     }
-}
-
-@media only screen and (max-width: 800px) {
-    .projectList {
-        width: 100%;
-    }
     .projectItem {
         width: 300px;
         height: 300px;
     }
 }
-@media only screen and (max-width: 394px) {
+
+@media only screen and (max-width: 600px) {
+    .projects h4 {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .projects h4 {
+        width: 99%;
+    }
     .projects h1 {
         font-size: 20px;
     }
