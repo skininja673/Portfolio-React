@@ -122,6 +122,14 @@
     .formBx {
         margin: 0;
     }
+    .formBx form input,
+    .formBx form textarea {
+        margin: 0.2rem;
+    }
+    #submitBtn {
+        margin-top: 10px;
+        padding: 8px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
