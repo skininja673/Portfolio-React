@@ -34,17 +34,14 @@ const ContactForm = () => {
 
                 <div className='formBx'>
                     <form
-                        name='contact v1'
+                        name='contact'
                         method='POST'
                         data-netlify='true'
                         onSubmit='submit'
                     >
                         <h3>Message Me</h3>
-                        <input
-                            type='hidden'
-                            name='form-name'
-                            value='contact v1'
-                        />
+                        <input type='hidden' name='form-name' value='contact' />
+
                         <input
                             type='text'
                             name='name'
