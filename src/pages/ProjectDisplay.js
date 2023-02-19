@@ -6,7 +6,7 @@ import '../styles/ProjectDisplay.css';
 function ProjectDisplay() {
     const { id } = useParams();
     const { image, name, about, dataSource, liveLink, codeLink } =
-        ProjectList[id];
+        ProjectList[id - 1];
 
     return (
         <section className='project'>

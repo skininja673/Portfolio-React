@@ -10,9 +10,8 @@ function Projects() {
             <h1> My Personal Projects</h1>
             <h4>{Disclaimer}</h4>
             <div className='projectList'>
-                {ProjectList.map((project, idx) => {
+                {ProjectList.map((project) => {
                     const { id, name, image } = project;
-
                     return (
                         <ProjectItem
                             key={id}
