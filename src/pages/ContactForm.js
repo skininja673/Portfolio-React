@@ -14,7 +14,6 @@ const ContactForm = () => {
 
             <div className='content'>
                 <div className='contactInfo'>
-                    {/* <h3>Contact Info</h3> */}
                     <div className='contactInfoBx'>
                         <div className='box'>
                             <div className='text'>

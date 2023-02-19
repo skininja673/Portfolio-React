@@ -25,15 +25,13 @@ const Form = () => {
                 placeholder={`Message: ${FormDisclaimer}`}
                 className='styleMe'
             ></textarea>
-            <button
+            <input
                 type='submit'
-                // value='Send Message'
+                value='Send Message'
                 name=''
                 className='btn'
                 id='submitBtn'
-            >
-                send
-            </button>
+            />
         </form>
     );
 };
