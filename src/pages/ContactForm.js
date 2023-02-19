@@ -33,13 +33,7 @@ const ContactForm = () => {
                 {/* <!-- Forms --> */}
 
                 <div className='formBx'>
-                    <form
-                        name='contact'
-                        method='POST'
-                        data-netlify='true'
-                        onSubmit='submit'
-                    >
-                        <h3>Message Me</h3>
+                    <form name='contact' method='POST' data-netlify='true'>
                         <input type='hidden' name='form-name' value='contact' />
 
                         <input
@@ -61,13 +55,15 @@ const ContactForm = () => {
                             placeholder={`Message: ${FormDisclaimer}`}
                             className='styleMe'
                         ></textarea>
-                        <input
+                        <button
                             type='submit'
                             // value='Send Message'
                             name=''
                             className='btn'
                             id='submitBtn'
-                        />
+                        >
+                            send
+                        </button>
                     </form>
                 </div>
             </div>
