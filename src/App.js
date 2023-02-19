@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import ProjectDisplay from './pages/ProjectDisplay';
 import ContactForm from './pages/ContactForm';
 import Experience from './pages/Experience';
-import ErrorPage from './pages/ErrorPage';
+// import ErrorPage from './pages/ErrorPage';
 
 function App() {
     return (
