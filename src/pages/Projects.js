@@ -11,12 +11,14 @@ function Projects() {
             <h4>{Disclaimer}</h4>
             <div className='projectList'>
                 {ProjectList.map((project, idx) => {
+                    const { id, name, image } = project;
+
                     return (
                         <ProjectItem
-                            key={idx}
-                            id={idx}
-                            name={project.name}
-                            image={project.image}
+                            key={id}
+                            id={id}
+                            name={name}
+                            image={image}
                         />
                     );
                 })}
