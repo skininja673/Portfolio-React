@@ -6,6 +6,7 @@ import '../styles/Home.css';
 
 function Home() {
     const { heading, title, aboutMe } = MyInfo;
+
     return (
         <div className='home'>
             <div className='about'>

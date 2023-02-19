@@ -77,10 +77,12 @@ export const MyInfo = {
     nickname: 'AL',
     heading: 'Hi my name is Akalpit',
     title: 'A Frontend Web Developer with a passion for learning and creating',
-    aboutMe:
-        "I'm Akalpit Sharma, a Front End Web Developer with a background in computer science. I am a hardworking and innovative thinker. I love creating user-friendly, responsive and accessible application. I make sure that my applications are clean and engaging. I bring a strong communication and interpersonal skills to every team that I work with to bring positive work envronment. When I am not coding I enjoy watching foreign movies and  listen to music. I also enjoy hopping on my bike and go for a long ride. You can catch me with a cup of coffee glued to a mobile at times.",
     mobile: '(581)-397-7738',
     email: 'sharma.akalpit@gmail.com',
+    aboutMe: `I'm Akalpit Sharma, a Front End Web Developer with a background in computer science. I am a hardworking and innovative thinker. I love creating user-friendly, responsive and accessible application. I make sure that my applications are clean and engaging. I bring a strong communication and interpersonal skills to every team that I work with, to bring a positive work envronment. When I am not coding I enjoy watching foreign movies and  listen to music. I also enjoy hopping on my bike and go for a long ride. You can catch me with a cup of coffee glued to a mobile at times.`,
+    fullName: function () {
+        return `Generated full name is ${this.name} and my nickname is ${this.nickname}`;
+    },
     SocialLinksList: [
         {
             id: 1,
@@ -109,5 +111,8 @@ export const MyInfo = {
     ],
 };
 
-export const Disclaimer =
+export const ProjectDisclaimer =
     "The project's idea/designs are taken from one of the courses I enrolled at Udemy. The aim of making these projects is to showcase and get comfortable with using React library. I enjoy coding in React and regularly upgrading my skills to tackle more complex problems. You are welcome to view the code and any comments or suggestions are highly appreciated. 🙏";
+
+export const FormDisclaimer =
+    'Sometimes, I dont receive the notification from this form, you are requested to email me instead. Thank You !';

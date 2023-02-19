@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/ContactForm.css';
-import { MyInfo } from '../helpers/Data';
+import { MyInfo, FormDisclaimer } from '../helpers/Data';
 
 const ContactForm = () => {
     const { mobile, email } = MyInfo;
@@ -33,12 +33,22 @@ const ContactForm = () => {
                 {/* <!-- Forms --> */}
 
                 <div className='formBx'>
-                    <form action='POST' data-netlify='true'>
+                    <form
+                        name='contact v1'
+                        method='POST'
+                        data-netlify='true'
+                        onSubmit='submit'
+                    >
                         <h3>Message Me</h3>
                         <input
+                            type='hidden'
+                            name='form-name'
+                            value='contact v1'
+                        />
+                        <input
                             type='text'
-                            placeholder='Name : '
                             name='name'
+                            placeholder='Name: '
                             className='styleMe'
                         />
                         <input
@@ -51,12 +61,12 @@ const ContactForm = () => {
                             name='message'
                             rows='6'
                             id=''
-                            placeholder="Message: Please email me instead, sometimes this form doesnt work well, as I don't get notification. Thank You."
+                            placeholder={`Message: ${FormDisclaimer}`}
                             className='styleMe'
                         ></textarea>
                         <input
                             type='submit'
-                            value='Send Message'
+                            // value='Send Message'
                             name=''
                             className='btn'
                             id='submitBtn'
