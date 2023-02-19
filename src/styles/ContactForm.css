@@ -97,6 +97,13 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .heading {
+        margin-top: 10px;
+    }
+    .content .contactInfo .contactInfoBx {
+        margin-top: 0px;
+    }
+    /* ---------- */
     .contact {
         width: 98%;
     }
@@ -108,9 +115,6 @@
     .contactInfoBx {
         display: flex;
         flex-direction: column;
-    }
-    .contactInfoBx .box {
-        margin: 2rem 0px;
     }
 }
 
