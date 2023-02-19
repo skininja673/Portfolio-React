@@ -41,7 +41,7 @@ function Navbar() {
                     Projects
                 </NavLink>
                 <NavLink
-                    to='/ContactForm'
+                    to='/contact'
                     className={({ isActive }) => {
                         return isActive ? 'active' : '';
                     }}

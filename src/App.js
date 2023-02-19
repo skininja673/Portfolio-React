@@ -19,8 +19,8 @@ function App() {
                     <Route path='/projects' element={<Projects />} />
                     <Route path='/project/:id' element={<ProjectDisplay />} />
                     <Route path='/experience' element={<Experience />} />
-                    <Route path='/ContactForm' element={<ContactForm />} />
-                    <Route path='*' element={<ErrorPage />} />
+                    <Route path='/contact' element={<ContactForm />} />
+                    {/* <Route path='*' element={<ErrorPage />} /> */}
                 </Routes>
                 <Footer />
             </Router>
