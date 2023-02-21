@@ -273,3 +273,14 @@ body {
 #back-btn {
     font-size: 0.7rem;
 }
+
+.liveLink {
+    text-decoration: none;
+    margin: 0px 2px;
+    font-size: 1.2rem;
+    color: var(--orangeColor);
+    padding: 5px;
+    border-bottom: 1px dotted var(--orangeColor);
+    letter-spacing: 0.5px;
+    display: inline-block;
+}

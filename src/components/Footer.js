@@ -27,7 +27,7 @@ function Footer() {
                     href='https://junocollege.com/'
                     target='_blank'
                     rel='noreferrer'
-                    className='collegeLink'
+                    className='liveLink'
                 >
                     Juno College
                 </a>

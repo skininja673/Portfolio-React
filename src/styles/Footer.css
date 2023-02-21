@@ -22,16 +22,6 @@
     letter-spacing: 1.3px;
 }
 
-.collegeLink {
-    text-decoration: none;
-    margin: 0px 2px;
-    font-size: 1.2rem;
-    color: var(--orangeColor);
-    padding: 5px;
-    border-bottom: 1px dotted var(--orangeColor);
-    letter-spacing: 0.5px;
-    display: inline-block;
-}
 @media only screen and (max-width: 600px) {
     .footer svg {
         font-size: 50px;

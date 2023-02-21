@@ -20,6 +20,9 @@ function ProjectDisplay() {
                 </a>
             </div>
 
+            <a href={liveLink} className='liveLink liveLink2'>
+                Live Link
+            </a>
             <p>{about}</p>
 
             <div className='link-container'>

@@ -51,6 +51,18 @@
     margin: 20px auto;
 }
 
+.liveLink2 {
+    /* border: 1px dotted var(--orangeColor); */
+    border-bottom: 1px dotted;
+    margin-bottom: 10px;
+    transition: 0.4s all;
+}
+.liveLink2:hover {
+    border: 1.5px dotted var(--orangeColor);
+    color: var(--whiteColor);
+    background-color: var(--orangeColor);
+}
+
 /* ------------------- */
 @media only screen and (max-width: 826px) {
     .project p {
