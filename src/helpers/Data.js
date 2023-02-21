@@ -8,6 +8,16 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHub from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import { CalendarToday } from '@material-ui/icons';
+import {
+    IoLogoHtml5,
+    IoLogoCss3,
+    IoLogoJavascript,
+    IoLogoSass,
+    IoLogoReact,
+    IoLogoFirebase,
+    IoLogoGithub,
+    IoAccessibility,
+} from 'react-icons/io5';
 
 export const ProjectList = [
     {
@@ -79,10 +89,21 @@ export const MyInfo = {
     title: 'A Frontend Web Developer with a passion for learning and creating',
     mobile: '(581)-397-7738',
     email: 'sharma.akalpit@gmail.com',
-    aboutMe: `I'm Akalpit Sharma, a Front End Web Developer with a background in computer science. I am a hardworking and innovative thinker. I love creating user-friendly, responsive and accessible application. I make sure that my applications are clean and engaging. I bring a strong communication and interpersonal skills to every team that I work with, to bring a positive work envronment. When I am not coding I enjoy watching foreign movies and  listen to music. I also enjoy hopping on my bike and go for a long ride. You can catch me with a cup of coffee glued to a mobile at times.`,
     fullName: function () {
         return `Generated full name is ${this.name} and my nickname is ${this.nickname}`;
     },
+    introduction: `I'm Akalpit Sharma, a Front End Web Developer with a Computer Science degree from York University and a Web Development Certificate from Juno College of Technology. I am a hardworking and innovative thinker who loves creating user-friendly, responsive, clean, engaging and accessible applications. I bring strong communication and interpersonal skills to every team that I work with. When I am not coding, I enjoy watching foreign movies and listen to music. I also enjoy hopping on my bike and go for a long ride. You can catch me with a cup of coffee glued to a mobile at times!`,
+    skills: [
+        { id: 1, name: 'html', icon: <IoLogoHtml5 /> },
+        { id: 2, name: 'css', icon: <IoLogoCss3 /> },
+        { id: 3, name: 'java script', icon: <IoLogoJavascript /> },
+        { id: 4, name: 'sass', icon: <IoLogoSass /> },
+        { id: 5, name: 'react', icon: <IoLogoReact /> },
+        { id: 6, name: 'git', icon: <IoLogoGithub /> },
+        { id: 7, name: 'firebase', icon: <IoLogoFirebase /> },
+        { id: 8, name: 'accessibility', icon: <IoAccessibility /> },
+    ],
+
     SocialLinksList: [
         {
             id: 1,
@@ -112,7 +133,7 @@ export const MyInfo = {
 };
 
 export const ProjectDisclaimer =
-    "The project's idea/designs are taken from one of the courses I enrolled at Udemy. The aim of making these projects is to showcase and get comfortable with using React library. I enjoy coding in React and regularly upgrading my skills to tackle more complex problems. You are welcome to view the code and any comments or suggestions are highly appreciated. 🙏";
+    'Welcome to my projects page! I enjoy coding in React, Javascript, HTML and CSS, and am consistently upgrading my skills to tackle more complex problems. You are welcome to view the code and any comments or suggestions are highly appreciated 🙏';
 
 export const FormDisclaimer =
     'Sometimes, I dont receive the notification from this form, you are requested to email me instead. Thank You !';

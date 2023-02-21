@@ -1,0 +1,43 @@
+/* servicesBx */
+/* container containing svg-container, actual svg, svg name */
+.skill {
+    text-align: center;
+    text-transform: capitalize;
+
+    /* background-color: var(--blueColor); */
+    /* color: var(--whiteColor); */
+    padding: 0px;
+    max-width: 360px;
+    margin: 10px 30px;
+    width: 200px;
+}
+
+/* only svg container */
+.skill p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+/* actual svg */
+.skill p svg {
+    font-size: 5rem;
+}
+
+/* svg name only */
+.skill span {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .skill {
+        max-width: 100px;
+    }
+    .skill p svg {
+        font-size: 3rem;
+    }
+    .skill span {
+        font-size: 1rem;
+    }
+}

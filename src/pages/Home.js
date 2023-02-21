@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import { MyInfo } from '../helpers/Data';
 import '../App.css';
 import '../styles/Home.css';
+import Skill from '../components/Skill';
 
 function Home() {
-    const { heading, title, aboutMe } = MyInfo;
+    const { heading, title, introduction, skills } = MyInfo;
 
     return (
         <div className='home'>
@@ -21,11 +22,23 @@ function Home() {
             <div className='skills' id='home'>
                 <h1> About Me</h1>
                 <ol className='list'>
+                    {/* about myself */}
                     <li className='item'>
                         <h3> Who am i ?</h3>
-                        <span className='intro'> {aboutMe}</span>
+                        <span className='intro'> {introduction}</span>
+                    </li>
+
+                    {/* about my skills */}
+                    <li className='item'>
+                        <h3>Skills</h3>
+                        <div className='skillsContainer'>
+                            {skills.map((skill, id) => (
+                                <Skill key={id} {...skill} />
+                            ))}
+                        </div>
                     </li>
                 </ol>
+
                 <Link to={'/projects'} className='btn'>
                     My Projects
                 </Link>
