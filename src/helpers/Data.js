@@ -17,6 +17,8 @@ import {
     IoLogoFirebase,
     IoLogoGithub,
     IoAccessibility,
+    // IoCallSharp,
+    // IoCalendarNumber,
 } from 'react-icons/io5';
 
 export const ProjectList = [
