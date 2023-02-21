@@ -6,18 +6,21 @@ const Form = () => {
             <input type='hidden' name='form-name' value='contact' />
 
             <input
+                required
                 type='text'
                 name='name'
                 placeholder='Name: '
                 className='styleMe'
             />
             <input
+                required
                 type='email'
                 placeholder='Email : '
                 name='email'
                 className='styleMe'
             />
             <textarea
+                required
                 name='message'
                 rows='6'
                 id=''
