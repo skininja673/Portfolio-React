@@ -29,7 +29,7 @@ const ContactForm = () => {
                     </div>
                 </div>
 
-                {/* <!-- Forms --> */}
+                {/* <!-- Form --> */}
                 <div className='formBx'>
                     <Form />
                 </div>
