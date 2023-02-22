@@ -1,4 +1,7 @@
 import pic from '../assets/pic.jpeg';
+import junoClg from '../assets/junoClg.jpg';
+import yorkUni from '../assets/yorkUni.jpg';
+import humberClg from '../assets/humberClg.jpg';
 import Proj1 from '../assets/proj1.jpg';
 import Proj2 from '../assets/proj2.jpg';
 import Proj3 from '../assets/proj3.jpg';
@@ -47,6 +50,8 @@ const aboutMe = {
 
 //---my info rendered on web pages----------
 export const myInfo = {
+    firstName: `${aboutMe.myName.firstName}`,
+    fullName: `${aboutMe.myName.fullName()}`,
     heading: `Hi my name is ${aboutMe.myName.firstName}`,
     title: 'A Frontend Web Developer with a passion for learning and creating',
     introduction: function () {
@@ -100,6 +105,26 @@ export const myInfo = {
             name: 'calendly',
             link: 'https://calendly.com/akalpit',
             icon: <IoCalendarNumber />,
+        },
+    ],
+    colleges: [
+        {
+            id: 1,
+            clgName: 'juno college',
+            clgSite: 'https://junocollege.com',
+            image: junoClg,
+        },
+        {
+            id: 2,
+            clgName: 'york university',
+            clgSite: 'https://www.yorku.ca/',
+            image: yorkUni,
+        },
+        {
+            id: 3,
+            clgName: 'humber college',
+            clgSite: 'https://humber.ca/',
+            image: humberClg,
         },
     ],
 };

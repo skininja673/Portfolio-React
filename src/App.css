@@ -283,4 +283,8 @@ body {
     border-bottom: 1px dotted var(--orangeColor);
     letter-spacing: 0.5px;
     display: inline-block;
+    text-transform: capitalize;
+
+    /* -- */
+    display: inline-flex;
 }

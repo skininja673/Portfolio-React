@@ -3,10 +3,11 @@ import '../styles/Footer.css';
 import { myInfo } from '../helpers/Data';
 
 function Footer() {
+    const { socialLinks, colleges, firstName } = myInfo;
     return (
         <div className='footer'>
             <div className='socialMedia'>
-                {myInfo.socialLinks.map((item) => {
+                {socialLinks.map((item) => {
                     const { id, link, icon } = item;
                     return (
                         <a
@@ -14,7 +15,6 @@ function Footer() {
                             key={id}
                             target='_blank'
                             rel='noreferrer'
-                            // title={name}
                         >
                             {icon}
                         </a>
@@ -22,14 +22,19 @@ function Footer() {
                 })}
             </div>
             <p>
-                Built by Akalpit @
+                Built by {firstName} @
                 <a
-                    href='https://junocollege.com/'
+                    href={colleges[0].clgSite}
                     target='_blank'
                     rel='noreferrer'
                     className='liveLink'
                 >
-                    Juno College
+                    {colleges[0].clgName}
+                    <img
+                        src={colleges[0].image}
+                        alt={colleges[0].clgName}
+                        className='clgImg'
+                    />
                 </a>
             </p>
         </div>
