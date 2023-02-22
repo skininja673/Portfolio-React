@@ -1,13 +1,10 @@
+import pic from '../assets/pic.jpeg';
 import Proj1 from '../assets/proj1.jpg';
 import Proj2 from '../assets/proj2.jpg';
 import Proj3 from '../assets/proj3.jpg';
 import Proj4 from '../assets/proj4.jpg';
 import Proj5 from '../assets/proj5.jpg';
 import Proj6 from '../assets/proj6.jpg';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHub from '@material-ui/icons/GitHub';
-import EmailIcon from '@material-ui/icons/Email';
-import { CalendarToday } from '@material-ui/icons';
 import {
     IoLogoHtml5,
     IoLogoCss3,
@@ -17,11 +14,37 @@ import {
     IoLogoFirebase,
     IoLogoGithub,
     IoAccessibility,
-    // IoCallSharp,
-    // IoCalendarNumber,
+    IoCallSharp,
+    IoCalendarNumber,
+    IoLogoLinkedin,
+    IoMail,
 } from 'react-icons/io5';
 
-export const ProjectList = [
+export const aboutMe = {
+    myName: {
+        firstName: 'Akalpit',
+        lastName: 'Sharma',
+        nickName: 'AL',
+        fullName: function () {
+            return `${this.firstName} ${this.lastName}`;
+        },
+    },
+    myPhone: {
+        phoneNumber: '(581) 397-7738',
+        icon: <IoCallSharp />,
+    },
+    myEmail: {
+        email: 'sharma.akalpit@gmail.com',
+        icon: <IoMail />,
+    },
+    myCalendly: {
+        calendlyLink: 'https://calendly.com/akalpit',
+        icon: <IoCalendarNumber />,
+    },
+    myPic: pic,
+};
+
+export const projectList = [
     {
         id: 1,
         name: 'Find Me a Meal',
@@ -29,8 +52,8 @@ export const ProjectList = [
         skills: 'JavaScript,HTML,SASS',
         liveLink: 'https://find-me-a-meal.netlify.app/',
         codeLink: 'https://github.com/findMeAMealApp/Project2-FindMeAMeal',
-        about: 'This is a Java Script app, in which third party mealdb-api is used to fetch data, and user can search his favorite meal',
         dataSource: 'https://www.themealdb.com/api.php',
+        about: 'This is a Java Script app, in which third party mealdb-api is used to fetch data, and user can search his favorite meal',
     },
     {
         id: 2,
@@ -39,8 +62,8 @@ export const ProjectList = [
         skills: 'HTML, CSS, React,',
         liveLink: 'https://cocktail-main.netlify.app/',
         codeLink: 'https://github.com/skininja673/Project3-Cocktail',
-        about: 'This is a React app, in which third party cocktaildb-api is used to fetch data, and user can search his favorite cocktail',
         dataSource: 'https://www.thecocktaildb.com/api.php',
+        about: 'This is a React app, in which third party cocktaildb-api is used to fetch data, and user can search his favorite cocktail',
     },
     {
         id: 3,
@@ -49,8 +72,8 @@ export const ProjectList = [
         skills: 'HTML, CSS, React',
         liveLink: 'https://boisterous-kataifi-ff43c6.netlify.app/',
         codeLink: 'https://github.com/skininja673/color-generator-app',
-        about: 'This is a React app, where user can choose different color and shades. The data is coming from Values.js library',
         dataSource: 'https://github.com/noeldelgado/values.js',
+        about: 'This is a React app, where user can choose different color and shades. The data is coming from Values.js library',
     },
     {
         id: 4,
@@ -59,8 +82,8 @@ export const ProjectList = [
         skills: 'HTML, CSS, React',
         liveLink: 'https://silly-rabanadas-de5545.netlify.app/',
         codeLink: 'https://github.com/skininja673/sidebar-modal',
-        about: 'This is a React app, its a very common UI seen in many websites',
         dataSource: '',
+        about: 'This is a React app, its a very common UI seen in many websites',
     },
     {
         id: 5,
@@ -69,8 +92,8 @@ export const ProjectList = [
         skills: 'HTML, CSS, React',
         liveLink: 'https://frabjous-zuccutto-a14ec4.netlify.app/',
         codeLink: 'https://github.com/skininja673/sliderApp',
-        about: 'This is a React app, its a slider and it changes in every 2 second',
         dataSource: '',
+        about: 'This is a React app, its a slider and it changes in every 2 second',
     },
     {
         id: 6,
@@ -79,22 +102,32 @@ export const ProjectList = [
         skills: 'React, JavaScript, HTML, CSS',
         liveLink: 'https://golden-eclair-7f9d75.netlify.app/',
         codeLink: 'https://github.com/skininja673/GroceryBud',
-        about: 'This is a list, where user can add/delete/edit items in list. This is a React project',
         dataSource: '',
+        about: 'This is a list, where user can add/delete/edit items in list. This is a React project',
     },
 ];
 
-export const MyInfo = {
-    name: 'Akalpit Sharma',
-    nickname: 'AL',
-    heading: 'Hi my name is Akalpit',
+export const myInfo = {
+    heading: `Hi my name is ${aboutMe.myName.firstName}`,
     title: 'A Frontend Web Developer with a passion for learning and creating',
-    mobile: '(581)-397-7738',
-    email: 'sharma.akalpit@gmail.com',
-    fullName: function () {
-        return `Generated full name is ${this.name} and my nickname is ${this.nickname}`;
+    introduction: function () {
+        return `I'm ${aboutMe.myName.fullName()}, a Front End Web Developer with a Computer Science degree from York University and a Web Development Certificate from Juno College of Technology. I am a hardworking and innovative thinker who loves creating user-friendly, responsive, clean, engaging and accessible applications. I bring strong communication and interpersonal skills to every team that I work with. When I am not coding, I enjoy watching foreign movies and listen to music. I also enjoy hopping on my bike and go for a long ride. You can catch me with a cup of coffee glued to a mobile at times!`;
     },
-    introduction: `I'm Akalpit Sharma, a Front End Web Developer with a Computer Science degree from York University and a Web Development Certificate from Juno College of Technology. I am a hardworking and innovative thinker who loves creating user-friendly, responsive, clean, engaging and accessible applications. I bring strong communication and interpersonal skills to every team that I work with. When I am not coding, I enjoy watching foreign movies and listen to music. I also enjoy hopping on my bike and go for a long ride. You can catch me with a cup of coffee glued to a mobile at times!`,
+    primaryContact: [
+        {
+            id: 1,
+            type: 'phone',
+            icon: aboutMe.myPhone.icon,
+            data: aboutMe.myPhone.phoneNumber,
+        },
+        {
+            id: 2,
+            type: 'email',
+            icon: aboutMe.myEmail.icon,
+            data: aboutMe.myEmail.email,
+        },
+    ],
+
     skills: [
         { id: 1, name: 'html', icon: <IoLogoHtml5 /> },
         { id: 2, name: 'css', icon: <IoLogoCss3 /> },
@@ -106,36 +139,36 @@ export const MyInfo = {
         { id: 8, name: 'accessibility', icon: <IoAccessibility /> },
     ],
 
-    SocialLinksList: [
+    socialLinks: [
         {
             id: 1,
             name: 'linkedin',
             link: 'https://www.linkedin.com/in/akalpit-sharma/',
-            icon: <LinkedInIcon />,
+            icon: <IoLogoLinkedin />,
         },
         {
             id: 2,
             name: 'github',
             link: 'https://github.com/skininja673?tab=repositories',
-            icon: <GitHub />,
+            icon: <IoLogoGithub />,
         },
         {
             id: 3,
             name: 'email',
-            link: 'mailto: sharma.akalpit@gmail.com',
-            icon: <EmailIcon />,
+            link: `mailto:`,
+            icon: <IoMail />,
         },
         {
             id: 4,
             name: 'calendly',
             link: 'https://calendly.com/akalpit',
-            icon: <CalendarToday />,
+            icon: <IoCalendarNumber />,
         },
     ],
 };
 
-export const ProjectDisclaimer =
+export const projectDisclaimer =
     'Welcome to my projects page! I enjoy coding in React, Javascript, HTML and CSS, and am consistently upgrading my skills to tackle more complex problems. You are welcome to view the code and any comments or suggestions are highly appreciated 🙏';
 
-export const FormDisclaimer =
+export const formDisclaimer =
     'Sometimes, I dont receive the notification from this form, you are requested to email me instead. Thank You !';

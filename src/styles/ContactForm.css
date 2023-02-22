@@ -30,6 +30,10 @@
 }
 .contactInfoBx .box .text h3 {
     font-weight: 500;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contactInfoBx .box .text p {
     font-weight: 300;
@@ -40,8 +44,14 @@
 .styleMe:focus {
     border-bottom: 1px solid var(--greyColor);
 }
+.contact-icon {
+    /* border: 2px solid red; */
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 7px;
+}
 
-/* --------------- */
+/* ----<Form /> styling----------- */
 
 .formBx {
     margin: 20px 0px 0px 0px;

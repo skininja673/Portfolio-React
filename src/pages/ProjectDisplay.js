@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ProjectList } from '../helpers/Data';
+import { projectList } from '../helpers/Data';
 import '../styles/ProjectDisplay.css';
 
 function ProjectDisplay() {
     const { id } = useParams();
     const { image, name, about, dataSource, liveLink, codeLink } =
-        ProjectList[id - 1];
+        projectList[id - 1];
 
     return (
         <section className='project'>

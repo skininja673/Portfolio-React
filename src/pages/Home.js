@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MyInfo } from '../helpers/Data';
+import { myInfo } from '../helpers/Data';
 import '../App.css';
 import '../styles/Home.css';
 import Skill from '../components/Skill';
 
 function Home() {
-    const { heading, title, introduction, skills } = MyInfo;
+    const { heading, title, skills } = myInfo;
 
     return (
         <div className='home'>
@@ -25,7 +25,7 @@ function Home() {
                     {/* about myself */}
                     <li className='item'>
                         <h3> Who am i ?</h3>
-                        <span className='intro'> {introduction}</span>
+                        <span className='intro'> {myInfo.introduction()}</span>
                     </li>
 
                     {/* about my skills */}

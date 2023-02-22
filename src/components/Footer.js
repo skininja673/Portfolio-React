@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/Footer.css';
-import { MyInfo } from '../helpers/Data';
+import { myInfo } from '../helpers/Data';
 
 function Footer() {
     return (
         <div className='footer'>
             <div className='socialMedia'>
-                {MyInfo.SocialLinksList.map((item) => {
+                {myInfo.socialLinks.map((item) => {
                     const { id, link, icon, name } = item;
                     return (
                         <a
