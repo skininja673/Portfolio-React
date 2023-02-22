@@ -4,8 +4,6 @@ import { myInfo } from '../helpers/Data';
 import Form from '../components/Form';
 
 const ContactForm = () => {
-    // const { contactList } = myInfo.primaryContact;
-
     return (
         <section className='contact' id='contact'>
             <div className='heading'>
@@ -33,22 +31,6 @@ const ContactForm = () => {
                         })}
                     </div>
                 </div>
-                {/* <div className='contactInfo'>
-                    <div className='contactInfoBx'>
-                        <div className='box'>
-                            <div className='text'>
-                                <h3>Phone no</h3>
-                                <p>mobile</p>
-                            </div>
-                        </div>
-                        <div className='box'>
-                            <div className='text'>
-                                <h3>Email Address</h3>
-                                <p>email</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
 
                 {/* <!-- Form --> */}
                 <div className='formBx'>

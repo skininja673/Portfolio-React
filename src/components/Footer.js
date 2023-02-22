@@ -7,14 +7,14 @@ function Footer() {
         <div className='footer'>
             <div className='socialMedia'>
                 {myInfo.socialLinks.map((item) => {
-                    const { id, link, icon, name } = item;
+                    const { id, link, icon } = item;
                     return (
                         <a
                             href={link}
                             key={id}
                             target='_blank'
                             rel='noreferrer'
-                            title={name}
+                            // title={name}
                         >
                             {icon}
                         </a>

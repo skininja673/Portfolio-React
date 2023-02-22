@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { projectList } from '../helpers/Data';
+import { myProjects } from '../helpers/Data';
 import '../styles/ProjectDisplay.css';
 
 function ProjectDisplay() {
     const { id } = useParams();
     const { image, name, about, dataSource, liveLink, codeLink } =
-        projectList[id - 1];
+        myProjects.projectList[id - 1];
 
     return (
         <section className='project'>
@@ -23,6 +23,7 @@ function ProjectDisplay() {
             <a href={liveLink} className='liveLink liveLink2'>
                 Live Link
             </a>
+
             <p>{about}</p>
 
             <div className='link-container'>

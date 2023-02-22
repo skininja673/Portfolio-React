@@ -20,7 +20,8 @@ import {
     IoMail,
 } from 'react-icons/io5';
 
-export const aboutMe = {
+// --my raw  information-------
+const aboutMe = {
     myName: {
         firstName: 'Akalpit',
         lastName: 'Sharma',
@@ -44,69 +45,7 @@ export const aboutMe = {
     myPic: pic,
 };
 
-export const projectList = [
-    {
-        id: 1,
-        name: 'Find Me a Meal',
-        image: Proj1,
-        skills: 'JavaScript,HTML,SASS',
-        liveLink: 'https://find-me-a-meal.netlify.app/',
-        codeLink: 'https://github.com/findMeAMealApp/Project2-FindMeAMeal',
-        dataSource: 'https://www.themealdb.com/api.php',
-        about: 'This is a Java Script app, in which third party mealdb-api is used to fetch data, and user can search his favorite meal',
-    },
-    {
-        id: 2,
-        name: 'Search Your Favorite Cocktail',
-        image: Proj2,
-        skills: 'HTML, CSS, React,',
-        liveLink: 'https://cocktail-main.netlify.app/',
-        codeLink: 'https://github.com/skininja673/Project3-Cocktail',
-        dataSource: 'https://www.thecocktaildb.com/api.php',
-        about: 'This is a React app, in which third party cocktaildb-api is used to fetch data, and user can search his favorite cocktail',
-    },
-    {
-        id: 3,
-        name: 'Color Generator App',
-        image: Proj3,
-        skills: 'HTML, CSS, React',
-        liveLink: 'https://boisterous-kataifi-ff43c6.netlify.app/',
-        codeLink: 'https://github.com/skininja673/color-generator-app',
-        dataSource: 'https://github.com/noeldelgado/values.js',
-        about: 'This is a React app, where user can choose different color and shades. The data is coming from Values.js library',
-    },
-    {
-        id: 4,
-        name: 'Sidebar & Modal',
-        image: Proj4,
-        skills: 'HTML, CSS, React',
-        liveLink: 'https://silly-rabanadas-de5545.netlify.app/',
-        codeLink: 'https://github.com/skininja673/sidebar-modal',
-        dataSource: '',
-        about: 'This is a React app, its a very common UI seen in many websites',
-    },
-    {
-        id: 5,
-        name: 'Slider App',
-        image: Proj5,
-        skills: 'HTML, CSS, React',
-        liveLink: 'https://frabjous-zuccutto-a14ec4.netlify.app/',
-        codeLink: 'https://github.com/skininja673/sliderApp',
-        dataSource: '',
-        about: 'This is a React app, its a slider and it changes in every 2 second',
-    },
-    {
-        id: 6,
-        name: 'Todo App',
-        image: Proj6,
-        skills: 'React, JavaScript, HTML, CSS',
-        liveLink: 'https://golden-eclair-7f9d75.netlify.app/',
-        codeLink: 'https://github.com/skininja673/GroceryBud',
-        dataSource: '',
-        about: 'This is a list, where user can add/delete/edit items in list. This is a React project',
-    },
-];
-
+//---my info rendered on web pages----------
 export const myInfo = {
     heading: `Hi my name is ${aboutMe.myName.firstName}`,
     title: 'A Frontend Web Developer with a passion for learning and creating',
@@ -127,7 +66,6 @@ export const myInfo = {
             data: aboutMe.myEmail.email,
         },
     ],
-
     skills: [
         { id: 1, name: 'html', icon: <IoLogoHtml5 /> },
         { id: 2, name: 'css', icon: <IoLogoCss3 /> },
@@ -138,7 +76,6 @@ export const myInfo = {
         { id: 7, name: 'firebase', icon: <IoLogoFirebase /> },
         { id: 8, name: 'accessibility', icon: <IoAccessibility /> },
     ],
-
     socialLinks: [
         {
             id: 1,
@@ -155,7 +92,7 @@ export const myInfo = {
         {
             id: 3,
             name: 'email',
-            link: `mailto:`,
+            link: `mailto: ${aboutMe.myEmail.email}`,
             icon: <IoMail />,
         },
         {
@@ -167,8 +104,70 @@ export const myInfo = {
     ],
 };
 
-export const projectDisclaimer =
-    'Welcome to my projects page! I enjoy coding in React, Javascript, HTML and CSS, and am consistently upgrading my skills to tackle more complex problems. You are welcome to view the code and any comments or suggestions are highly appreciated 🙏';
+export const myProjects = {
+    projectsIntro:
+        'Welcome to my projects page! I enjoy coding in React, Javascript, HTML and CSS, and am consistently upgrading my skills to tackle more complex problems. You are welcome to view the code and any comments or suggestions are highly appreciated 🙏',
 
-export const formDisclaimer =
-    'Sometimes, I dont receive the notification from this form, you are requested to email me instead. Thank You !';
+    projectList: [
+        {
+            id: 1,
+            name: 'Find Me a Meal',
+            image: Proj1,
+            skills: 'JavaScript,HTML,SASS',
+            liveLink: 'https://find-me-a-meal.netlify.app/',
+            codeLink: 'https://github.com/findMeAMealApp/Project2-FindMeAMeal',
+            dataSource: 'https://www.themealdb.com/api.php',
+            about: 'This is a Java Script app, in which third party mealdb-api is used to fetch data, and user can search his favorite meal',
+        },
+        {
+            id: 2,
+            name: 'Search Your Favorite Cocktail',
+            image: Proj2,
+            skills: 'HTML, CSS, React,',
+            liveLink: 'https://cocktail-main.netlify.app/',
+            codeLink: 'https://github.com/skininja673/Project3-Cocktail',
+            dataSource: 'https://www.thecocktaildb.com/api.php',
+            about: 'This is a React app, in which third party cocktaildb-api is used to fetch data, and user can search his favorite cocktail',
+        },
+        {
+            id: 3,
+            name: 'Color Generator App',
+            image: Proj3,
+            skills: 'HTML, CSS, React',
+            liveLink: 'https://boisterous-kataifi-ff43c6.netlify.app/',
+            codeLink: 'https://github.com/skininja673/color-generator-app',
+            dataSource: 'https://github.com/noeldelgado/values.js',
+            about: 'This is a React app, where user can choose different color and shades. The data is coming from Values.js library',
+        },
+        {
+            id: 4,
+            name: 'Sidebar & Modal',
+            image: Proj4,
+            skills: 'HTML, CSS, React',
+            liveLink: 'https://silly-rabanadas-de5545.netlify.app/',
+            codeLink: 'https://github.com/skininja673/sidebar-modal',
+            dataSource: '',
+            about: 'This is a React app, its a very common UI seen in many websites',
+        },
+        {
+            id: 5,
+            name: 'Slider App',
+            image: Proj5,
+            skills: 'HTML, CSS, React',
+            liveLink: 'https://frabjous-zuccutto-a14ec4.netlify.app/',
+            codeLink: 'https://github.com/skininja673/sliderApp',
+            dataSource: '',
+            about: 'This is a React app, its a slider and it changes in every 2 second',
+        },
+        {
+            id: 6,
+            name: 'Todo App',
+            image: Proj6,
+            skills: 'React, JavaScript, HTML, CSS',
+            liveLink: 'https://golden-eclair-7f9d75.netlify.app/',
+            codeLink: 'https://github.com/skininja673/GroceryBud',
+            dataSource: '',
+            about: 'This is a list, where user can add/delete/edit items in list. This is a React project',
+        },
+    ],
+};
