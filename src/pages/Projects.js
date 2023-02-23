@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectItem from '../components/ProjectItem';
-// import { projectList, projectsIntro } from '../helpers/Data';
 import { myProjects } from '../helpers/Data';
 
 import '../styles/Projects.css';
