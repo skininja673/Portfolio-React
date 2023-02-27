@@ -4,7 +4,6 @@ import Proj3 from '../assets/proj3.jpg';
 import Proj4 from '../assets/proj4.jpg';
 import Proj5 from '../assets/proj5.jpg';
 import Proj6 from '../assets/proj6.jpg';
-import pic from '../assets/pic.jpeg';
 import junoClg from '../assets/junoClg.jpg';
 import yorkUni from '../assets/yorkUni.jpg';
 import humberClg from '../assets/humberClg.jpg';
@@ -26,8 +25,8 @@ import {
 // --my raw  information-------
 const aboutMe = {
     myName: {
-        firstName: 'Ankit',
-        lastName: 'Saxena',
+        firstName: 'Akalpit',
+        lastName: 'Sharma',
         nickName: 'AL',
         fullName: function () {
             return `${this.firstName} ${this.lastName}`;
@@ -51,12 +50,12 @@ const aboutMe = {
 export const myInfo = {
     firstName: `${aboutMe.myName.firstName}`,
     fullName: `${aboutMe.myName.fullName()}`,
-    heading: `Hi my name is ${aboutMe.myName.firstName}`,
+    heading: `Hi I am ${aboutMe.myName.firstName}`,
     title: 'A Frontend Web Developer with a passion for learning and creating',
     introduction: function () {
         return `I'm ${aboutMe.myName.fullName()}, a Front End Web Developer with a Computer Science degree from York University and a Web Development Certificate from Juno College of Technology. I am a hardworking and innovative thinker who loves creating user-friendly, responsive, clean, engaging and accessible applications. I bring strong communication and interpersonal skills to every team that I work with. When I am not coding, I enjoy watching foreign movies and listen to music. I also enjoy hopping on my bike and go for a long ride. You can catch me with a cup of coffee glued to a mobile at times!`;
     },
-    pic: aboutMe.myPic,
+    autoTypeSkills: ['Tech Savvy', 'CS Graduate'],
     primaryContact: [
         {
             id: 1,

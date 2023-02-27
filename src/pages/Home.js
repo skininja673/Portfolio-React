@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { myInfo } from '../helpers/Data';
 import '../App.css';
+import AutoTyping from '../components/AutoTyping';
 import '../styles/Home.css';
+
 import Skill from '../components/Skill';
 
 function Home() {
@@ -11,10 +13,15 @@ function Home() {
     return (
         <div className='home'>
             <div className='about'>
+                {/* auto typed */}
+                <AutoTyping />
                 <h2> {heading}</h2>
+
                 <div className='prompt'>
                     <p>{title}</p>
                 </div>
+
+                {/* about me button */}
                 <a href='#home' className='btn'>
                     About Me
                 </a>
