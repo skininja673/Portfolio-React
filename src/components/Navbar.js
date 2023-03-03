@@ -27,7 +27,7 @@ function Navbar() {
                 <NavLink
                     to='/'
                     className={({ isActive }) => {
-                        return isActive ? 'active' : '';
+                        return isActive ? 'active hover' : 'hover';
                     }}
                 >
                     Home
@@ -35,7 +35,7 @@ function Navbar() {
                 <NavLink
                     to='/projects'
                     className={({ isActive }) => {
-                        return isActive ? 'active' : '';
+                        return isActive ? 'active hover' : 'hover';
                     }}
                 >
                     Projects
@@ -43,7 +43,7 @@ function Navbar() {
                 <NavLink
                     to='/contact'
                     className={({ isActive }) => {
-                        return isActive ? 'active' : '';
+                        return isActive ? 'active hover' : 'hover';
                     }}
                 >
                     Contact
