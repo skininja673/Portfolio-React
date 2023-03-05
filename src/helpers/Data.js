@@ -106,24 +106,30 @@ export const myInfo = {
             icon: <IoCalendarNumber />,
         },
     ],
-    colleges: [
+    timeline: [
         {
             id: 1,
             clgName: 'juno college',
             clgSite: 'https://junocollege.com',
             image: junoClg,
+            task: 'Graduated in Immersive Frontend Web Development with approx 4 gpa',
+            year: 2022,
         },
         {
             id: 2,
             clgName: 'york university',
             clgSite: 'https://www.yorku.ca/',
             image: yorkUni,
+            task: 'Graduated in Bachelor of Computer Science with approx 3.3 gpa',
+            year: 2020,
         },
         {
             id: 3,
             clgName: 'humber college',
             clgSite: 'https://humber.ca/',
             image: humberClg,
+            task: 'Graduated in Computer and Networking Support Technician with approx 3.5 gpa',
+            year: 2013,
         },
     ],
 };
