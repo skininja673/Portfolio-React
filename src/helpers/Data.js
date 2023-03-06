@@ -7,6 +7,9 @@ import Proj6 from '../assets/proj6.jpg';
 import junoClg from '../assets/junoClg.jpg';
 import yorkUni from '../assets/yorkUni.jpg';
 import humberClg from '../assets/humberClg.jpg';
+import morganStanley from '../assets/morganStanley.jpg';
+import aps from '../assets/aps.jpg';
+import mcDonald from '../assets/mcDonald.jpg';
 import {
     IoLogoHtml5,
     IoLogoCss3,
@@ -20,7 +23,10 @@ import {
     IoCalendarNumber,
     IoLogoLinkedin,
     IoMail,
+    IoSchoolOutline,
 } from 'react-icons/io5';
+import { MdOutlineWorkOutline } from 'react-icons/md';
+import { SiMysql } from 'react-icons/si';
 
 // --my raw  information-------
 const aboutMe = {
@@ -79,6 +85,7 @@ export const myInfo = {
         { id: 6, name: 'git', icon: <IoLogoGithub /> },
         { id: 7, name: 'firebase', icon: <IoLogoFirebase /> },
         { id: 8, name: 'accessibility', icon: <IoAccessibility /> },
+        { id: 9, name: 'sql', icon: <SiMysql /> },
     ],
     socialLinks: [
         {
@@ -109,27 +116,87 @@ export const myInfo = {
     timeline: [
         {
             id: 1,
-            clgName: 'juno college',
-            clgSite: 'https://junocollege.com',
-            image: junoClg,
-            task: 'Graduated in Immersive Frontend Web Development with approx 4 gpa',
-            year: 2022,
+            name: 'aps immigration',
+            companySite: 'https://www.facebook.com/apsimmigration',
+            image: aps,
+            year: 'current',
+            tag: 'employee',
+            icon: <MdOutlineWorkOutline />,
+            title: 'volunteer job',
+            about: [
+                'Supporting senior front-end web developers with everyday tasks like the creation of webpages and updating existing web applications.',
+                'Collaborating with the development team by utilizing the knowledge of HTML, CSS, JavaScript and React to create a dynamic and responsive user interface.',
+                'Organize client’s data, making calls and scheduling appointment.',
+            ],
         },
         {
             id: 2,
-            clgName: 'york university',
-            clgSite: 'https://www.yorku.ca/',
-            image: yorkUni,
-            task: 'Graduated in Bachelor of Computer Science with approx 3.3 gpa',
-            year: 2020,
+            name: 'juno college',
+            site: 'https://junocollege.com/bootcamp/web-development-toronto/',
+            image: junoClg,
+            about: 'Graduated in Immersive Frontend Web Development bootcamp maintaing gpa of approx 4.0 throughout. ',
+            title: 'immersive frontend web development bootcamp',
+            year: 2022,
+            tag: 'student',
+            icon: <IoSchoolOutline />,
+            companySite: 'https://junocollege.com/',
         },
         {
             id: 3,
-            clgName: 'humber college',
-            clgSite: 'https://humber.ca/',
+            name: 'morgan stanley',
+            companySite: 'https://www.morganstanley.ca/',
+            image: morganStanley,
+            about: [
+                'Supporting and monitoring application that acts as the central database repository that stores fixed income distributed sales trades that handle manual and electronic cash, credit, and interest rate derivative trades. This helps keep the system’s uptime.',
+                'Handling the user request for extracting data from the database using SQL queries. This helps users with data analysis.',
+                'Monitored underline hardware infrastructure alerts and AutoSys jobs for setting up and transferring feed files of clients from one team to the other as an upstream data source.',
+                'Acted as the primary point of contact in providing Level 2 support for production issues in North American time zone. This helps other IT teams and users (Salespeople/sales assistants / Traders) to resolve their queries in a timely manner.',
+                "This role required skills such as Linux command line, Python scripting, and scheduling tools like Autosys, and SQL to query database various databases, ticketing tools like ServiceNow and use Morgan Stanley's internal monitoring tool (Sockeye) to monitor the alerts (database alerts, infrastructure alerts, Autosys job failure).",
+                'Diagnose and coordinate root cause analysis and problem-prevention efforts. This helps system improvement and improves the system’s reliability.',
+            ],
+            year: 'April 2021 - November 2021',
+            tag: 'employee',
+            icon: <MdOutlineWorkOutline />,
+            title: 'application support analyst',
+        },
+        {
+            id: 4,
+            name: 'york university',
+            site: 'https://futurestudents.yorku.ca/program/computer-science',
+            image: yorkUni,
+            about: 'Graduated in Bachelor of Computer Science maintaining gpa of approx 3.3 throughout.',
+            year: 2020,
+            tag: 'student',
+            icon: <IoSchoolOutline />,
+            title: 'bachelor in computer science',
+            companySite: 'https://www.yorku.ca/',
+        },
+        {
+            id: 5,
+            name: 'humber college',
+            site: 'https://appliedtechnology.humber.ca/programs/computer-systems-technician-information-technology-infrastructure-and-services.html',
             image: humberClg,
-            task: 'Graduated in Computer and Networking Support Technician with approx 3.5 gpa',
+            about: 'Graduated in Computer and Networking Support Technician program maintaining 3.5 gpa throughout',
             year: 2013,
+            tag: 'student',
+            icon: <IoSchoolOutline />,
+            title: 'computer & network support technician',
+            companySite: 'https://www.humber.ca/',
+        },
+        {
+            id: 6,
+            name: 'mc donalds',
+            companySite: 'https://www.mcdonalds.com/ca/en-ca.html',
+            image: mcDonald,
+            year: '2008 - 2019',
+            tag: 'employee',
+            about: [
+                'Trained workers in food preparation, money handling and cleaning roles to facilitate restaurant operations.',
+                'Collaborated with trainees in the understanding of project management, safety and inventory waste.',
+                "Ensured compliance with all quality standards, guidelines and principles of McDonald's.",
+            ],
+            icon: <MdOutlineWorkOutline />,
+            title: 'crew trainer',
         },
     ],
 };

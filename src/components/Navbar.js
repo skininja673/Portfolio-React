@@ -48,6 +48,14 @@ function Navbar() {
                 >
                     Contact
                 </NavLink>
+                <NavLink
+                    to='/experience'
+                    className={({ isActive }) => {
+                        return isActive ? 'active hover' : 'hover';
+                    }}
+                >
+                    Experience
+                </NavLink>
             </div>
         </div>
     );

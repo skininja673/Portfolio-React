@@ -26,7 +26,7 @@ function ProjectDisplay() {
                 target='_blank'
                 rel='noreferrer'
             >
-                > Live Link
+                Live Link
             </a>
 
             <p>{about}</p>

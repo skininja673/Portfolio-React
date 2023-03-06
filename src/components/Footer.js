@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Footer.css';
 import { myInfo } from '../helpers/Data';
 
-const collegeNameAtFooter = 'juno';
+const collegeNameAtFooter = 'JUNO';
 function Footer() {
     const { socialLinks, timeline, firstName } = myInfo;
     return (
@@ -26,24 +26,29 @@ function Footer() {
                 Built by {firstName} @
                 {timeline
                     .filter((item) => {
-                        return item.clgName
+                        return item.name
                             .toLowerCase()
                             .includes(`${collegeNameAtFooter}`.toLowerCase());
                     })
                     .map((item) => {
-                        const { id, clgName, clgSite, image } = item;
+                        const {
+                            id,
+                            name: collegeName,
+                            site: collegeSite,
+                            image,
+                        } = item;
                         return (
                             <a
                                 key={id}
-                                href={clgSite}
+                                href={collegeSite}
                                 target='_blank'
                                 rel='noreferrer'
                                 className='liveLink'
                             >
-                                {clgName}
+                                {collegeName}
                                 <img
                                     src={image}
-                                    alt={clgName}
+                                    alt={collegeName}
                                     className='clgImg'
                                 />
                             </a>

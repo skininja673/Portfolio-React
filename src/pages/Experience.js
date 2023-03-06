@@ -1,72 +1,113 @@
+// motivation: https://www.npmjs.com/package/react-vertical-timeline-component
 import React from 'react';
 import {
     VerticalTimeline,
     VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import SchoolIcon from '@material-ui/icons/School';
-import WorkIcon from '@material-ui/icons/Work';
+import '../styles/Experience.css';
+import { myInfo } from '../helpers/Data';
 
 function Experience() {
+    const { timeline } = myInfo;
     return (
         <div className='experience'>
             <VerticalTimeline lineColor='#3e497a'>
-                <VerticalTimelineElement
-                    className='vertical-timeline-element--education'
-                    date='2022'
-                    iconStyle={{ background: '#3e497a', color: '#fff' }}
-                    icon={<SchoolIcon />}
-                >
-                    <h3 className='vertical-timeline-element-title'>
-                        Humber College Graduate
-                    </h3>
-                    <p> Computer and Network Support Technician</p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className='vertical-timeline-element--education'
-                    date='2014 - 2018'
-                    iconStyle={{ background: '#3e497a', color: '#fff' }}
-                    icon={<SchoolIcon />}
-                >
-                    <h3 className='vertical-timeline-element-title'>
-                        some university
-                    </h3>
+                {timeline.map((item) => {
+                    const {
+                        id,
+                        name,
+                        site,
+                        image,
+                        about,
+                        year,
+                        icon,
+                        tag,
+                        title,
+                        companySite,
+                    } = item;
 
-                    <h4 className='vertical-timeline-element-subtitle'>
-                        Bachelor's Degree
-                    </h4>
+                    // rendering education
+                    if (tag === 'student') {
+                        return (
+                            <VerticalTimelineElement
+                                className='vertical-timeline-element--education singleElement'
+                                iconStyle={{
+                                    // background: '#3e497a',
+                                    background: '#E1C340',
+                                    color: '#fff',
+                                }}
+                                date={year}
+                                icon={icon}
+                                key={id}
+                            >
+                                <div className='singleElementContainer'>
+                                    <div className='imgContainer'>
+                                        <a
+                                            href={companySite}
+                                            target='_blank'
+                                            rel='noreferrer'
+                                        >
+                                            <img src={image} alt='name' />
+                                        </a>
+                                    </div>
+                                    <h3 className='title'>{name}</h3>
+                                    <h4 className='subTitle'>
+                                        {title}
+                                        <span>
+                                            <a
+                                                href={site}
+                                                className='liveLink visitLink'
+                                                target='_blank'
+                                                rel='noreferrer'
+                                            >
+                                                Program Link
+                                            </a>
+                                        </span>
+                                    </h4>
+                                    <p> {about}</p>
+                                </div>
+                            </VerticalTimelineElement>
+                        );
+                    }
 
-                    <p> Computer Science</p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className='vertical-timeline-element--work'
-                    date='2018 - 2020'
-                    iconStyle={{ background: '#e9d35b', color: '#fff' }}
-                    icon={<WorkIcon />}
-                >
-                    <h3 className='vertical-timeline-element-title'>
-                        crew trainer
-                    </h3>
-                    <h4 className='vertical-timeline-element-subtitle'>
-                        canada
-                    </h4>
-                    <p>something was done</p>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                    className='vertical-timeline-element--work'
-                    date='2020 - present'
-                    iconStyle={{ background: '#e9d35b', color: '#fff' }}
-                    icon={<WorkIcon />}
-                >
-                    <h3 className='vertical-timeline-element-title'>
-                        managing crew
-                    </h3>
-                    <h4 className='vertical-timeline-element-subtitle'>
-                        canada
-                    </h4>
-                    <p>trying to do something</p>
-                </VerticalTimelineElement>
+                    // rendering work, make sure 'about' section of work must be array, otherwise it will break;
+                    return (
+                        <VerticalTimelineElement
+                            className='vertical-timeline-element--work singleElement'
+                            iconStyle={{
+                                background: '#3e497a',
+                                color: '#fff',
+                            }}
+                            date={year}
+                            icon={icon}
+                            key={id}
+                        >
+                            <div className='singleElementContainer'>
+                                <div className='imgContainer'>
+                                    <a
+                                        href={companySite}
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >
+                                        <img src={image} alt='name' />
+                                    </a>
+                                </div>
+                                <h3 className='title'>{name}</h3>
+                                <h4 className='subTitle'>{title}</h4>
+                                <ul className='unorderedList'>
+                                    {about.map((line, ix) => {
+                                        return (
+                                            <li className='list' key={ix}>
+                                                <p>{line}</p>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            </div>
+                        </VerticalTimelineElement>
+                    );
+                })}
             </VerticalTimeline>
         </div>
     );
