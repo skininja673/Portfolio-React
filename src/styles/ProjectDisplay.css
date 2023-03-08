@@ -51,8 +51,44 @@
     margin: 20px auto;
 }
 
+#back-btn {
+    font-size: 1.2rem;
+}
+
+.backIcon {
+    display: flex;
+    width: 2rem;
+}
+.backIcon img {
+    margin: 0;
+    border: 0;
+}
+
+.btn #apiIcon,
+.btn #codeIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 3rem;
+    margin-left: 5px;
+}
+.btn #apiIcon img,
+.btn #codeIcon img {
+    margin: 0;
+    border: 0;
+}
+
+#back-btn,
+.codeBtn,
+.apiBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 0.5rem;
+}
+
 .liveLink2 {
-    /* border: 1px dotted var(--orangeColor); */
     border-bottom: 1px dotted;
     margin-bottom: 10px;
     transition: 0.4s all;
@@ -67,6 +103,9 @@
 @media only screen and (max-width: 826px) {
     .project p {
         padding: 0;
+    }
+    .link-container .btn {
+        margin-right: 20px;
     }
 }
 @media only screen and (max-width: 550px) {

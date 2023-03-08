@@ -263,16 +263,13 @@ body {
     text-align: center;
     transition: 0.7s all;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .btn:hover {
     background-color: var(--whiteColor);
     color: var(--greenColor);
     border: 1px solid var(--greenColor);
-}
-
-#back-btn {
-    font-size: 0.7rem;
 }
 
 .liveLink {

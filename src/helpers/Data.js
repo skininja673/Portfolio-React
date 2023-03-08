@@ -10,7 +10,9 @@ import humberClg from '../assets/humberClg.jpg';
 import morganStanley from '../assets/morganStanley.jpg';
 import aps from '../assets/aps.jpg';
 import mcDonald from '../assets/mcDonald.jpg';
-
+import apiIcon from '../assets/apiIcon.png';
+import codeIcon from '../assets/codeIcon.png';
+import backIcon from '../assets/backIcon.png';
 import {
     IoLogoHtml5 as HtmlIcon,
     IoLogoCss3 as CssIcon,
@@ -209,6 +211,10 @@ export const myInfo = {
 export const myProjects = {
     projectsIntro:
         'Welcome to my projects page! I enjoy coding in React, Javascript, HTML and CSS, and am consistently upgrading my skills to tackle more complex problems. You are welcome to view the code and any comments or suggestions are highly appreciated 🙏',
+
+    codeIcon: codeIcon,
+    apiIcon: apiIcon,
+    backIcon: backIcon,
 
     projectList: [
         {
