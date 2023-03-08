@@ -10,23 +10,27 @@ import humberClg from '../assets/humberClg.jpg';
 import morganStanley from '../assets/morganStanley.jpg';
 import aps from '../assets/aps.jpg';
 import mcDonald from '../assets/mcDonald.jpg';
+
 import {
-    IoLogoHtml5,
-    IoLogoCss3,
-    IoLogoJavascript,
-    IoLogoSass,
-    IoLogoReact,
-    IoLogoFirebase,
-    IoLogoGithub,
-    IoAccessibility,
-    IoCallSharp,
-    IoCalendarNumber,
-    IoLogoLinkedin,
-    IoMail,
-    IoSchoolOutline,
+    IoLogoHtml5 as HtmlIcon,
+    IoLogoCss3 as CssIcon,
+    IoLogoJavascript as JavascriptIcon,
+    IoLogoSass as SassIcon,
+    IoLogoReact as ReactIcon,
+    // IoLogoFirebase as FirebaseIcon,
+    IoLogoGithub as GithubIcon,
+    // IoAccessibility as AccessibilityIcon,
+    IoCallSharp as CallIcon,
+    IoCalendarNumber as CalendarIcon,
+    IoLogoLinkedin as LinkedinIcon,
+    IoMail as MailIcon,
+    IoSchoolOutline as SchoolIcon,
 } from 'react-icons/io5';
-import { MdOutlineWorkOutline } from 'react-icons/md';
-import { SiMysql } from 'react-icons/si';
+import { MdOutlineWorkOutline as WorkIcon } from 'react-icons/md';
+import {
+    SiMysql as SqlIcon,
+    SiStyledcomponents as StyledIcon,
+} from 'react-icons/si';
 
 // --my raw  information-------
 const aboutMe = {
@@ -40,15 +44,15 @@ const aboutMe = {
     },
     myPhone: {
         phoneNumber: '(581) 397-7738',
-        icon: <IoCallSharp />,
+        icon: <CallIcon />,
     },
     myEmail: {
         email: 'sharma.akalpit@gmail.com',
-        icon: <IoMail />,
+        icon: <MailIcon />,
     },
     myCalendly: {
         calendlyLink: 'https://calendly.com/akalpit',
-        icon: <IoCalendarNumber />,
+        icon: <CalendarIcon />,
     },
 };
 
@@ -77,40 +81,41 @@ export const myInfo = {
         },
     ],
     skills: [
-        { id: 1, name: 'html', icon: <IoLogoHtml5 /> },
-        { id: 2, name: 'css', icon: <IoLogoCss3 /> },
-        { id: 3, name: 'java script', icon: <IoLogoJavascript /> },
-        { id: 4, name: 'sass', icon: <IoLogoSass /> },
-        { id: 5, name: 'react', icon: <IoLogoReact /> },
-        { id: 6, name: 'git', icon: <IoLogoGithub /> },
-        { id: 7, name: 'firebase', icon: <IoLogoFirebase /> },
-        { id: 8, name: 'accessibility', icon: <IoAccessibility /> },
-        { id: 9, name: 'sql', icon: <SiMysql /> },
+        { id: 1, name: 'html', icon: <HtmlIcon /> },
+        { id: 2, name: 'css', icon: <CssIcon /> },
+        { id: 3, name: 'java script', icon: <JavascriptIcon /> },
+        { id: 6, name: 'git', icon: <GithubIcon /> },
+        { id: 5, name: 'react', icon: <ReactIcon /> },
+        { id: 4, name: 'sass', icon: <SassIcon /> },
+        { id: 9, name: 'SQL', icon: <SqlIcon /> },
+        // { id: 7, name: 'firebase', icon: <FirebaseIcon /> },
+        // { id: 8, name: 'accessibility', icon: <AccessibilityIcon /> },
+        { id: 10, name: 'styled components', icon: <StyledIcon /> },
     ],
     socialLinks: [
         {
             id: 1,
             name: 'linkedin',
             link: 'https://www.linkedin.com/in/akalpit-sharma/',
-            icon: <IoLogoLinkedin />,
+            icon: <LinkedinIcon />,
         },
         {
             id: 2,
             name: 'github',
-            link: 'https://github.com/skininja673?tab=repositories',
-            icon: <IoLogoGithub />,
+            link: 'https://github.com/skininja673',
+            icon: <GithubIcon />,
         },
         {
             id: 3,
             name: 'email',
             link: `mailto: ${aboutMe.myEmail.email}`,
-            icon: <IoMail />,
+            icon: <MailIcon />,
         },
         {
             id: 4,
             name: 'calendly',
             link: 'https://calendly.com/akalpit',
-            icon: <IoCalendarNumber />,
+            icon: <CalendarIcon />,
         },
     ],
     timeline: [
@@ -121,7 +126,7 @@ export const myInfo = {
             image: aps,
             year: 'Current',
             tag: 'employee',
-            icon: <MdOutlineWorkOutline />,
+            icon: <WorkIcon />,
             title: 'volunteer job',
             about: [
                 'Supporting senior front-end web developers with everyday tasks like the creation of webpages and updating existing web applications.',
@@ -138,7 +143,7 @@ export const myInfo = {
             title: 'immersive frontend web development bootcamp',
             year: 2022,
             tag: 'student',
-            icon: <IoSchoolOutline />,
+            icon: <SchoolIcon />,
             companySite: 'https://junocollege.com/',
         },
         {
@@ -156,7 +161,7 @@ export const myInfo = {
             ],
             year: 'April 2021 - November 2021',
             tag: 'employee',
-            icon: <MdOutlineWorkOutline />,
+            icon: <WorkIcon />,
             title: 'application support analyst',
         },
         {
@@ -167,7 +172,7 @@ export const myInfo = {
             about: 'Graduated in Bachelor of Computer Science maintaining gpa of approx 3.3 throughout.',
             year: 2020,
             tag: 'student',
-            icon: <IoSchoolOutline />,
+            icon: <SchoolIcon />,
             title: 'bachelor in computer science',
             companySite: 'https://www.yorku.ca/',
         },
@@ -179,7 +184,7 @@ export const myInfo = {
             about: 'Graduated in Computer and Networking Support Technician program maintaining 3.5 gpa throughout.',
             year: 2013,
             tag: 'student',
-            icon: <IoSchoolOutline />,
+            icon: <SchoolIcon />,
             title: 'computer & network support technician',
             companySite: 'https://www.humber.ca/',
         },
@@ -195,7 +200,7 @@ export const myInfo = {
                 'Collaborated with trainees in the understanding of project management, safety and inventory waste.',
                 "Ensured compliance with all quality standards, guidelines and principles of McDonald's.",
             ],
-            icon: <MdOutlineWorkOutline />,
+            icon: <WorkIcon />,
             title: 'crew trainer',
         },
     ],
