@@ -96,6 +96,10 @@ function Experience() {
                                 </div>
                                 <h3 className='title'>{name}</h3>
                                 <h4 className='subTitle'>{title}</h4>
+                                {/* ALGO: 
+                                (1) if array has more than 3 items, then if 'readMore' is true, then render all items of array and link to collaps
+                                     if 'readMore' is false, then render only 3 items and a link to expand                               
+                                (2) if array has less than 3 items then render all*/}
                                 {about.length > 3 ? (
                                     readMore ? (
                                         <>
