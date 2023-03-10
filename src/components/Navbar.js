@@ -41,20 +41,20 @@ function Navbar() {
                     Projects
                 </NavLink>
                 <NavLink
-                    to='/contact'
-                    className={({ isActive }) => {
-                        return isActive ? 'active hover' : 'hover';
-                    }}
-                >
-                    Contact
-                </NavLink>
-                <NavLink
                     to='/experience'
                     className={({ isActive }) => {
                         return isActive ? 'active hover' : 'hover';
                     }}
                 >
                     Experience
+                </NavLink>
+                <NavLink
+                    to='/contact'
+                    className={({ isActive }) => {
+                        return isActive ? 'active hover' : 'hover';
+                    }}
+                >
+                    Contact
                 </NavLink>
             </div>
         </div>

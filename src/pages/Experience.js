@@ -9,7 +9,8 @@ import '../styles/Experience.css';
 import { myInfo } from '../helpers/Data';
 
 function Experience() {
-    const { timeline } = myInfo;
+    const [readMore, setReadMore] = React.useState(true);
+    const { timeline, UpIcon } = myInfo;
     return (
         <div className='experience'>
             <VerticalTimeline lineColor='#3e497a'>
@@ -95,15 +96,67 @@ function Experience() {
                                 </div>
                                 <h3 className='title'>{name}</h3>
                                 <h4 className='subTitle'>{title}</h4>
-                                <ul className='unorderedList'>
-                                    {about.map((line, ix) => {
-                                        return (
-                                            <li className='list' key={ix}>
-                                                <p>{line}</p>
-                                            </li>
-                                        );
-                                    })}
-                                </ul>
+                                {about.length > 3 ? (
+                                    readMore ? (
+                                        <>
+                                            <ul className='unorderedList'>
+                                                {about
+                                                    .slice(0, 3)
+                                                    .map((line, ix) => {
+                                                        return (
+                                                            <li
+                                                                className='list'
+                                                                key={ix}
+                                                            >
+                                                                <p>{line}</p>
+                                                            </li>
+                                                        );
+                                                    })}
+                                            </ul>
+                                            <button
+                                                className='liveLink visitLink readMoreBtn'
+                                                onClick={() =>
+                                                    setReadMore(false)
+                                                }
+                                            >
+                                                read more...
+                                            </button>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <ul className='unorderedList'>
+                                                {about.map((line, ix) => {
+                                                    return (
+                                                        <li
+                                                            className='list'
+                                                            key={ix}
+                                                        >
+                                                            <p>{line}</p>
+                                                        </li>
+                                                    );
+                                                })}
+                                            </ul>
+                                            <button
+                                                className='liveLink visitLink readMoreBtn'
+                                                onClick={() =>
+                                                    setReadMore(true)
+                                                }
+                                            >
+                                                read less <UpIcon />
+                                            </button>
+                                        </>
+                                    )
+                                ) : (
+                                    <ul className='unorderedList'>
+                                        {about.map((line, ix) => {
+                                            return (
+                                                <li className='list' key={ix}>
+                                                    <p>{line}</p>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                )}
                             </div>
                         </VerticalTimelineElement>
                     );

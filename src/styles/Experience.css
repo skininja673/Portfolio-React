@@ -47,11 +47,14 @@
 }
 .unorderedList {
     padding: 0px;
+    /* border: 2px solid red; */
+    margin-bottom: 0.5rem;
 }
 .unorderedList li {
     color: var(--lightBlueColor);
     list-style-type: none;
     display: flex;
+    transition: 0.7s all linear;
 }
 .unorderedList li::before {
     content: '\00BB';
@@ -61,6 +64,18 @@
 .unorderedList li p {
     margin: 0 0 0 5px;
     padding: 0;
+}
+
+.readMoreBtn {
+    border: none;
+    background-color: inherit;
+    margin-left: 0.8rem;
+    cursor: pointer;
+}
+
+.readMoreBtn svg {
+    margin-left: 0.1rem;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 551px) {

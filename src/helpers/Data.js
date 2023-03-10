@@ -27,6 +27,8 @@ import {
     IoLogoLinkedin as LinkedinIcon,
     IoMail as MailIcon,
     IoSchoolOutline as SchoolIcon,
+    IoCaretDownSharp as DownIcon,
+    IoCaretUpSharp as UpIcon,
 } from 'react-icons/io5';
 import { MdOutlineWorkOutline as WorkIcon } from 'react-icons/md';
 import {
@@ -60,6 +62,8 @@ const aboutMe = {
 
 //---my info rendered on web pages----------
 export const myInfo = {
+    UpIcon,
+    DownIcon,
     firstName: `${aboutMe.myName.firstName}`,
     fullName: `${aboutMe.myName.fullName()}`,
     heading: `Hi I am ${aboutMe.myName.firstName}`,
