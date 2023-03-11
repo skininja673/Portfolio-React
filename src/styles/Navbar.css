@@ -25,7 +25,7 @@
     /* border: 2px solid magenta; */
     display: flex;
     flex-direction: column;
-    height: 20px;
+    height: 2rem;
 }
 
 .toggleButton {
@@ -62,26 +62,31 @@
     text-align: center;
 }
 
+.hover {
+    position: relative;
+}
+.hover::after {
+    content: '';
+    position: absolute;
+    height: 0.175rem;
+    width: 100%;
+    background-color: var(--yellowColor);
+    left: 0;
+    bottom: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.5s ease;
+}
 .hover:hover::after {
-    content: '';
-    border-bottom: 2px solid var(--greenColor);
-    display: block;
-    text-align: center;
-    width: 65px;
-    margin: 0 auto;
-    padding-bottom: 5px;
+    transform: scale(1, 1);
 }
-.active::after {
+.active:after {
     content: '';
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid var(--yellowColor);
     display: block;
-    text-align: center;
-    width: 65px;
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 5px;
-}
-
-@media only screen and (min-width: 600px) {
+    padding-bottom: 1px;
 }
 
 @media only screen and (max-width: 600px) {

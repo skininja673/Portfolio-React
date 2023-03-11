@@ -10,7 +10,9 @@
 .projects h1 {
     color: var(--lightBlueColor);
     font-size: 25px;
+    margin-bottom: 0.4rem;
 }
+
 .projects h4 {
     max-width: 1200px;
     width: 70%;

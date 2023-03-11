@@ -28,6 +28,7 @@ function Home() {
             </div>
             <div className='skills' id='home'>
                 <h1> About Me</h1>
+                <span className='underline' />
                 <ol className='list'>
                     {/* about myself */}
                     <li className='item'>

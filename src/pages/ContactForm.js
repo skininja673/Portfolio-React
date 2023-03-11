@@ -8,6 +8,7 @@ const ContactForm = () => {
         <section className='contact' id='contact'>
             <div className='heading'>
                 <h2>Get in Touch</h2>
+                <div className='underline' />
             </div>
 
             <div className='content'>

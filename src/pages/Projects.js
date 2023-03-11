@@ -9,6 +9,7 @@ function Projects() {
     return (
         <div className='projects'>
             <h1> My Personal Projects</h1>
+            <span className='underline' />
             <h4>{projectsIntro}</h4>
             <div className='projectList'>
                 {projectList.map((project) => {
