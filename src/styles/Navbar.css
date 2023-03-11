@@ -124,3 +124,23 @@
         flex-direction: row;
     }
 }
+
+@media only screen and (max-width: 572px) {
+    .links {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .links a {
+        min-width: 100%;
+    }
+}
+@media only screen and (max-width: 363px) {
+    .links {
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .links a {
+        font-size: 1.1rem;
+    }
+}
