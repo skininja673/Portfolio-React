@@ -167,6 +167,10 @@
         font-size: 0.9rem;
         width: 160px;
     }
+
+    .content {
+        margin-top: 1.5rem;
+    }
 }
 
 /* ------------------ */

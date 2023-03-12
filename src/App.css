@@ -217,6 +217,10 @@ html {
 }
 
 /* -generic styles applied to all pages-------- */
+/* @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700&family=Petit+Formal+Script&display=swap');
+
 :root {
     --blueColor: #21325e;
     --lightBlueColor: #3e497a;
@@ -229,6 +233,8 @@ html {
     --yellowColor: #e9d35b;
     --familySegoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --familyArial: 'Arial', sans-serif;
+    --familyHandwriting: 'Merienda', cursive;
+    --familyHandwriting2: 'Petit Formal Script', cursive;
 }
 
 * {
@@ -275,11 +281,12 @@ body {
 .liveLink {
     text-decoration: none;
     margin: 0px 2px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--orangeColor);
-    padding: 5px;
+    padding: 0px 5px;
     border-bottom: 1px dotted var(--orangeColor);
-    letter-spacing: 0.5px;
+    /* letter-spacing: 0.5px; */
+    letter-spacing: 0px;
     display: inline-block;
     text-transform: capitalize;
 

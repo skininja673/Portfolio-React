@@ -1,21 +1,30 @@
 /* auto type */
 #common {
-    font-size: 1.3rem;
+    /* border: 2px solid yellow; */
+    font-size: 1.7rem;
+    font-family: var(--familyHandwriting);
+    height: 5vh;
+    display: flex;
+    align-items: center;
 }
 
 .autoTypeContainer {
+    /* border: 2px solid red; */
     display: flex;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 .staticContainer h3 {
+    /* border: 2px solid yellow; */
     margin: 0;
 }
 
 .autoContainer .auto-child {
     display: flex;
     text-align: center;
-    max-width: 9rem;
+    max-width: 15rem;
+    /* max-width: 100%; */
     margin-left: 5px;
 }
 .autoContainer .auto-child input {
@@ -36,6 +45,18 @@
     }
 
     #common {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .autoTypeContainer {
+        /* border: 2px solid yellow; */
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-left: 2rem;
     }
 }

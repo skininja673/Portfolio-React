@@ -25,9 +25,11 @@
 }
 
 /* svg name only */
-.skill span {
-    font-size: 1.5rem;
+.skill p {
+    /* font-size: 1.5rem; */
+    font-size: 1.3rem;
     letter-spacing: 0.1rem;
+    /* border: 2px solid red; */
 }
 
 @media only screen and (max-width: 600px) {

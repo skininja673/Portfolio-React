@@ -8,7 +8,9 @@ function AutoTyping() {
     return (
         <div className='autoTypeContainer'>
             <div className='child staticContainer'>
-                <h3 id='common'>I'm</h3>
+                <h3 id='common' className='firstChild'>
+                    i'm
+                </h3>
             </div>
             <div className='child autoContainer'>
                 <Typed
@@ -18,7 +20,7 @@ function AutoTyping() {
                     backSpeed={50}
                     loop
                 >
-                    <input type='text' id='common' />
+                    <input type='text' id='common' className='secondChild' />
                 </Typed>
             </div>
         </div>

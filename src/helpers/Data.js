@@ -66,12 +66,12 @@ export const myInfo = {
     DownIcon,
     firstName: `${aboutMe.myName.firstName}`,
     fullName: `${aboutMe.myName.fullName()}`,
-    heading: `Hi I am ${aboutMe.myName.firstName}`,
+    heading: `hi,  i'm ${aboutMe.myName.firstName}`,
     title: 'A Frontend Web Developer with a passion for learning and creating',
     introduction: function () {
         return `I'm ${aboutMe.myName.fullName()}, a Front End Web Developer with a Computer Science degree from York University and a Web Development Certificate from Juno College of Technology. I am a hardworking and innovative thinker who loves creating user-friendly, responsive, clean, engaging and accessible applications. I bring strong communication and interpersonal skills to every team that I work with. When I am not coding, I enjoy watching foreign movies and listen to music. I also enjoy hopping on my bike and go for a long ride. You can catch me with a cup of coffee glued to a mobile at times!`;
     },
-    autoTypeSkills: ['Tech Savvy', 'CS Graduate'],
+    autoTypeSkills: ['Tech Savvy !', 'CS Graduate !'],
     primaryContact: [
         {
             id: 1,
@@ -147,7 +147,7 @@ export const myInfo = {
             image: junoClg,
             about: 'Graduated in Immersive Frontend Web Development bootcamp maintaing gpa of approx 4.0 throughout. ',
             title: 'immersive frontend web development bootcamp',
-            year: 2022,
+            year: 'Graduated 2022',
             tag: 'student',
             icon: <SchoolIcon />,
             companySite: 'https://junocollege.com/',
@@ -176,7 +176,7 @@ export const myInfo = {
             site: 'https://futurestudents.yorku.ca/program/computer-science',
             image: yorkUni,
             about: 'Graduated in Bachelor of Computer Science maintaining gpa of approx 3.3 throughout.',
-            year: 2020,
+            year: 'Graduated 2020',
             tag: 'student',
             icon: <SchoolIcon />,
             title: 'bachelor in computer science',
@@ -188,7 +188,7 @@ export const myInfo = {
             site: 'https://appliedtechnology.humber.ca/programs/computer-systems-technician-information-technology-infrastructure-and-services.html',
             image: humberClg,
             about: 'Graduated in Computer and Networking Support Technician program maintaining 3.5 gpa throughout.',
-            year: 2013,
+            year: 'Graduated 2013',
             tag: 'student',
             icon: <SchoolIcon />,
             title: 'computer & network support technician',

@@ -18,15 +18,19 @@
 }
 
 .about h2 {
-    font-family: var(--familySegoe);
     font-size: 80px;
-    color: var(--yellowColor);
+    /* border: 2px solid red; */
+
     height: 50px;
+    font-family: var(--familyHandwriting);
+    color: var(--orangeColor);
 }
 
 .about .prompt {
+    /* border: 2px solid red; */
     width: 40%;
     font-size: 30px;
+    margin-top: 5rem;
 }
 
 .skills {
@@ -59,6 +63,10 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.skills .list .item:last-child {
+    margin: 5rem 0px;
 }
 
 @media only screen and (max-width: 824px) {
@@ -94,7 +102,8 @@
 
     .skills h3 {
         font-size: 30px;
-        margin: 0 0 10px 0;
+        /* border: 2px solid red; */
+        margin: 4rem 0 1rem 0;
     }
     .skills h1 {
         font-size: 45px;

@@ -4,7 +4,7 @@ const Skill = ({ name, icon }) => {
     return (
         <div className='skill'>
             <p>{icon}</p>
-            <span>{name}</span>
+            <p>{name}</p>
         </div>
     );
 };
