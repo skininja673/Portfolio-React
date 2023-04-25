@@ -4,6 +4,7 @@ import Proj3 from '../assets/proj3.jpg';
 import Proj4 from '../assets/proj4.jpg';
 import Proj5 from '../assets/proj5.jpg';
 import Proj6 from '../assets/proj6.jpg';
+import Proj7 from '../assets/proj7.jpg';
 import junoClg from '../assets/junoClg.jpg';
 import yorkUni from '../assets/yorkUni.jpg';
 import humberClg from '../assets/humberClg.jpg';
@@ -34,6 +35,7 @@ import { MdOutlineWorkOutline as WorkIcon } from 'react-icons/md';
 import {
     SiMysql as SqlIcon,
     SiStyledcomponents as StyledIcon,
+    SiContentful as ContentfulIcon,
 } from 'react-icons/si';
 
 // --my raw  information-------
@@ -66,7 +68,7 @@ export const myInfo = {
     DownIcon,
     firstName: `${aboutMe.myName.firstName}`,
     fullName: `${aboutMe.myName.fullName()}`,
-    heading: `hi,  i'm ${aboutMe.myName.firstName}`,
+    heading: `Hi,  i'm ${aboutMe.myName.firstName}`,
     title: 'A Frontend Web Developer with a passion for learning and creating',
     introduction: function () {
         return `I'm ${aboutMe.myName.fullName()}, a Front End Web Developer with a Computer Science degree from York University and a Web Development Certificate from Juno College of Technology. I am a hardworking and innovative thinker who loves creating user-friendly, responsive, clean, engaging and accessible applications. I bring strong communication and interpersonal skills to every team that I work with. When I am not coding, I enjoy watching foreign movies and listen to music. I also enjoy hopping on my bike and go for a long ride. You can catch me with a cup of coffee glued to a mobile at times!`;
@@ -90,12 +92,13 @@ export const myInfo = {
         { id: 1, name: 'html', icon: <HtmlIcon /> },
         { id: 2, name: 'css', icon: <CssIcon /> },
         { id: 3, name: 'java script', icon: <JavascriptIcon /> },
-        { id: 6, name: 'git', icon: <GithubIcon /> },
-        { id: 5, name: 'react', icon: <ReactIcon /> },
         { id: 4, name: 'sass', icon: <SassIcon /> },
-        { id: 9, name: 'SQL', icon: <SqlIcon /> },
+        { id: 5, name: 'react', icon: <ReactIcon /> },
+        { id: 6, name: 'git', icon: <GithubIcon /> },
         // { id: 7, name: 'firebase', icon: <FirebaseIcon /> },
         // { id: 8, name: 'accessibility', icon: <AccessibilityIcon /> },
+        { id: 11, name: 'contentful cms', icon: <ContentfulIcon /> },
+        { id: 9, name: 'SQL', icon: <SqlIcon /> },
         { id: 10, name: 'styled components', icon: <StyledIcon /> },
     ],
     socialLinks: [
@@ -187,11 +190,11 @@ export const myInfo = {
             name: 'humber college',
             site: 'https://appliedtechnology.humber.ca/programs/computer-systems-technician-information-technology-infrastructure-and-services.html',
             image: humberClg,
-            about: 'Graduated in Computer and Networking Support Technician program maintaining 3.5 gpa throughout.',
+            about: 'Graduated in Computer Support Technician program maintaining 3.5 gpa throughout.',
             year: 'Graduated 2013',
             tag: 'student',
             icon: <SchoolIcon />,
-            title: 'computer & network support technician',
+            title: 'computer support technician',
             companySite: 'https://www.humber.ca/',
         },
         {
@@ -223,6 +226,17 @@ export const myProjects = {
     projectList: [
         {
             id: 1,
+            name: 'Digital Society Lab',
+            image: Proj7,
+            skills: 'Html, Sass, React, Contentful',
+            liveLink: 'https://dslproject-al-feature-branch.netlify.app/',
+            codeLink:
+                'https://github.com/DSL-Project/dsl-project/tree/al-feature-branch',
+            dataSource: 'https://www.contentful.com/',
+            about: 'Designed and developed an interactive, user-friendly, and dynamic website for McMaster University’s Digital Society Lab using React and CSS3 / SCSS',
+        },
+        {
+            id: 2,
             name: 'Find Me a Meal',
             image: Proj1,
             skills: 'JavaScript,HTML,SASS',
@@ -232,7 +246,7 @@ export const myProjects = {
             about: 'This is a Java Script app, in which third party mealdb-api is used to fetch data, and user can search his favorite meal',
         },
         {
-            id: 2,
+            id: 3,
             name: 'Search Your Favorite Cocktail',
             image: Proj2,
             skills: 'HTML, CSS, React,',
@@ -242,7 +256,7 @@ export const myProjects = {
             about: 'This is a React app, in which third party cocktaildb-api is used to fetch data, and user can search his favorite cocktail',
         },
         {
-            id: 3,
+            id: 4,
             name: 'Color Generator App',
             image: Proj3,
             skills: 'HTML, CSS, React',
@@ -252,7 +266,7 @@ export const myProjects = {
             about: 'This is a React app, where user can choose different color and shades. The data is coming from Values.js library',
         },
         {
-            id: 4,
+            id: 5,
             name: 'Sidebar & Modal',
             image: Proj4,
             skills: 'HTML, CSS, React',
@@ -262,7 +276,7 @@ export const myProjects = {
             about: 'This is a React app, its a very common UI seen in many websites',
         },
         {
-            id: 5,
+            id: 6,
             name: 'Slider App',
             image: Proj5,
             skills: 'HTML, CSS, React',
@@ -272,7 +286,7 @@ export const myProjects = {
             about: 'This is a React app, its a slider and it changes in every 2 second',
         },
         {
-            id: 6,
+            id: 7,
             name: 'Todo App',
             image: Proj6,
             skills: 'React, JavaScript, HTML, CSS',
