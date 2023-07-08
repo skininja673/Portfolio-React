@@ -17,6 +17,9 @@
 
 .project .img-container {
     border-radius: 10px;
+    /* border: 2px solid red; */
+    /* width: 20%; */
+
     min-width: 343.2px;
 }
 .project img {
@@ -107,6 +110,9 @@
     .link-container .btn {
         margin-right: 20px;
     }
+    .img-container {
+        /* border: 3px solid red; */
+    }
 }
 @media only screen and (max-width: 550px) {
     .btn {
@@ -133,7 +139,7 @@
     .link-container {
         flex-direction: column;
     }
-    .project .img-container {
+    /* .project .img-container {
         min-width: 200px;
-    }
+    } */
 }

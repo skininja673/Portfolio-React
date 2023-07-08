@@ -9,7 +9,9 @@ import dsl from '../assets/unsplash.JPG';
 const ProjectDisplay = () => {
     const { codeIcon, apiIcon, backIcon } = myProjects;
     const { state } = useLocation();
-    const { title, url, id, img } = state;
+    const { title, url, id, img, item } = state;
+    const { about, githubLink, hasApi, image, otherImg } = item.fields;
+    console.log('state: ', state);
 
     return (
         <section className='project'>
@@ -21,13 +23,13 @@ const ProjectDisplay = () => {
             </Link>
             <h1> {title}</h1>
 
-            <div className='img-container' style={{ width: '40%' }}>
+            <div className='img-container'>
                 <a href={url} target='_blank' rel='noreferrer'>
-                    {/* <img src={img} alt={`${title} pic`} /> */}
-                    <img src={dsl} alt={`pic`} />
+                    <img src={img} alt={`pic`} />
                 </a>
             </div>
 
+            {/* live link */}
             <a
                 href={url}
                 className='liveLink liveLink2'

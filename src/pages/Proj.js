@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 // import dsl from '../assets/cocktail.jpg';
 // import dsl from '../assets/dsl.jpg';
 // import dsl from '../assets/unsplash.JPG';
-import dsl from '../assets/erd.JPG';
+// import dsl from '../assets/erd.JPG';
 
 export const Proj = () => {
     const { loading, projects } = useFetchProjects();
@@ -24,7 +24,7 @@ export const Proj = () => {
         <>
             <div className='projects'>
                 <h1> My Personal Projects</h1>
-                <span className='underline' />
+                {/* <span className='underline' /> */}
                 <h4>
                     Welcome to my projects page! I enjoy coding in React,
                     Javascript, HTML and CSS, and am consistently upgrading my
@@ -46,23 +46,10 @@ export const Proj = () => {
                                 to={`/project/${id}`}
                                 state={project}
                             >
-                                {/* <img src={img} alt={title} className='img' /> */}
-                                <img src={dsl} alt='asdf' className='img' />
+                                <img src={img} alt={title} className='img' />
                                 <p className='proj-title'>{title}</p>
                             </Link>
                         );
-                        // return (
-                        //     <a
-                        //         href={url}
-                        //         key={id}
-                        //         target='_blank'
-                        //         rel='noreferrer'
-                        //         className='projec'
-                        //     >
-                        //         <img src={img} alt={title} className='img' />
-                        //         <p className='proj-title'>{title}</p>
-                        //     </a>
-                        // );
                     })}
                 </div>
             </section>

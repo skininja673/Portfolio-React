@@ -1,5 +1,4 @@
 import { createClient } from 'contentful';
-import React from 'react';
 import { useState, useEffect } from 'react';
 const client = createClient({
     space: 'dlrxol35l8vd',
@@ -21,11 +20,10 @@ export const useFetchProjects = () => {
                 const { title, url, image } = item.fields;
                 const id = item.sys.id;
                 const img = image?.fields?.file?.url;
-                return { title, url, id, img };
+                return { title, url, id, img, item };
             });
             setProjects(projects);
             setLoading(false);
-            console.log('testing: ');
         } catch (error) {
             console.log('error: ', error);
             setLoading(false);

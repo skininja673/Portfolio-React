@@ -224,6 +224,7 @@ html {
 :root {
     --blueColor: #21325e;
     --lightBlueColor: #3e497a;
+    --lightBlueTint: #e7e7ee;
     --greyColor: #999;
     --lightGreyColor: #ccc;
     --greenColor: #009e66;
