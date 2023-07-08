@@ -1,4 +1,4 @@
-.projects {
+/* .projects {
     width: 100%;
     height: auto;
     display: flex;
@@ -30,20 +30,20 @@
     color: var(--lightBlueColor);
     font-size: 60px;
     font-weight: bolder;
-}
+} */
 
-.projectList {
-    /* width: 70vw; */
+/* .projectList {
+
     width: 70%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-}
+} */
 
 /* MENU ITEM STYLING */
 
-.projectItem {
+/* .projectItem {
     border-radius: 15px;
     width: 300px;
     height: 300px;
@@ -106,4 +106,4 @@
     .projectItem {
         width: 100%;
     }
-}
+} */

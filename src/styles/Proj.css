@@ -1,0 +1,116 @@
+/* body {
+    border: 3px solid red;
+} */
+.projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects h1 {
+    color: var(--lightBlueColor);
+    font-size: 25px;
+    margin-bottom: 0.4rem;
+}
+
+.projects h4 {
+    max-width: 1200px;
+    width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+    line-height: 2rem;
+    font-family: var(--familyArial);
+    color: var(--lightBlueColor);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.projects .projectTitle {
+    text-align: center;
+    color: var(--lightBlueColor);
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+/* ------------------ */
+.projecs {
+    /* padding: 5rem 0; */
+    /* border: 2px solid red; */
+}
+
+.projecs-center {
+    width: 70vw;
+    /* max-width: 1120px; */
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: grid;
+    gap: 2rem;
+    /* -------------- */
+}
+
+.projec {
+    background: white;
+    /* display: block; */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out all;
+    text-decoration: none;
+    /* border: 2px solid red; */
+}
+
+.projec:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+    max-width: 100%;
+    /* padding: 10px 5px; */
+
+    display: block;
+    object-fit: cover;
+    height: 18rem;
+    width: 100%;
+
+    margin: 0 auto;
+    /* border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    /* border: 2px solid black; */
+}
+
+.projec .img {
+    /* height: 15rem;
+    width: 100%; */
+    /* padding: 10px; */
+    /* margin: 0 auto;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem; */
+    /* border: 2px solid black; */
+}
+
+.proj-title {
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 0.1rem 0;
+    color: var(--blueColor);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+@media (min-width: 768px) {
+    .projecs-center {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 992px) {
+    .projecs-center {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
