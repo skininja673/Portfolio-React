@@ -94,8 +94,9 @@
 
 .liveLink2 {
     border-bottom: 1px dotted;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     transition: 0.4s all;
+    padding: 5px;
 }
 .liveLink2:hover {
     border: 1.5px dotted var(--orangeColor);
@@ -164,6 +165,16 @@
         object-fit: scale-down;
         height: 9rem;
         padding: 3px 0px;
+    }
+
+    .cust-container {
+        /* border: 3px solid red; */
+        width: 100%;
+        text-align: center;
+    }
+    .cust-container .live {
+        /* border: 1px dotted orangered; */
+        font-size: 0.8rem;
     }
 
     /* ---------------------------- */

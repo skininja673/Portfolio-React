@@ -50,6 +50,18 @@ export const Proj = () => {
                                 <p className='proj-title'>{title}</p>
                             </Link>
                         );
+                        // return (
+                        //     <a
+                        //         href={url}
+                        //         key={id}
+                        //         target='_blank'
+                        //         rel='noreferrer'
+                        //         className='projec'
+                        //     >
+                        //         <img src={img} alt={title} className='img' />
+                        //         <p className='proj-title'>{title}</p>
+                        //     </a>
+                        // );
                     })}
                 </div>
             </section>

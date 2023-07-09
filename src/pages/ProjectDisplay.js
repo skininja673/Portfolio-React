@@ -3,9 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { myProjects } from '../helpers/Data';
 import '../styles/ProjectDisplay.css';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-// import dsl from '../assets/cocktail.jpg';
-// import dsl from '../assets/dsl.jpg';
-import dsl from '../assets/unsplash.JPG';
 
 const ProjectDisplay = () => {
     const { codeIcon, apiIcon, backIcon } = myProjects;
@@ -46,18 +43,28 @@ const ProjectDisplay = () => {
             <div className='cust-container'>
                 <a
                     href={url}
-                    className='liveLink liveLink2'
+                    className='liveLink liveLink2 live'
                     target='_blank'
                     rel='noreferrer'
                 >
                     Live Link
                 </a>
 
+                {/* github link */}
+                <a
+                    href={githubLink}
+                    className='liveLink liveLink2 live'
+                    target='_blank'
+                    rel='noreferrer'
+                >
+                    view code
+                </a>
+
                 {/* design link */}
                 {hasDesign && (
                     <a
                         href={designLink}
-                        className='liveLink liveLink2'
+                        className='liveLink liveLink2 live'
                         target='_blank'
                         rel='noreferrer'
                     >
@@ -69,22 +76,33 @@ const ProjectDisplay = () => {
                 {hasDiagram && (
                     <Link
                         to='/diagram'
-                        className='liveLink liveLink2'
-                        state={diagram}
+                        className='liveLink liveLink2 live'
+                        state={state}
                     >
-                        ERD Relationship
+                        ERD Link
                     </Link>
+                )}
+
+                {/* api link */}
+                {hasApi && (
+                    <a
+                        href={apiUsed}
+                        className='liveLink liveLink2 live'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        api link
+                    </a>
                 )}
             </div>
 
             {/* about section */}
 
             <div className='richText'>{documentToReactComponents(about)}</div>
-            {console.log('ABOUT: ', about.content)}
 
             <div className='link-container'>
                 {/* github link */}
-                <a
+                {/* <a
                     href={githubLink}
                     className='btn codeBtn'
                     target='_blank'
@@ -94,11 +112,10 @@ const ProjectDisplay = () => {
                     <div id='codeIcon'>
                         <img src={codeIcon} alt='' />
                     </div>
-                </a>
+                </a> */}
 
                 {/* api used */}
-
-                {hasApi && (
+                {/* {hasApi && (
                     <a
                         href={apiUsed}
                         className='btn apiBtn'
@@ -110,7 +127,7 @@ const ProjectDisplay = () => {
                             <img src={apiIcon} alt='' />
                         </div>
                     </a>
-                )}
+                )} */}
             </div>
         </section>
     );

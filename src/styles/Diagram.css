@@ -16,6 +16,46 @@
     width: 70%;
 }
 
+/* -------------- */
+.specialB {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    max-width: 8rem;
+    margin: 10px auto;
+    text-decoration: none;
+    padding: 0;
+    height: 3rem;
+    background-color: var(--greenColor);
+    border-radius: 10px;
+
+    transition: 0.7s all;
+    cursor: pointer;
+}
+.specialIm {
+    width: 3rem;
+    height: 2.3rem;
+
+    /* border: 2px solid red; */
+}
+.specialP {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: white;
+    /* border: 2px solid blue; */
+}
+.specialB:hover {
+    border: 1px solid green;
+    background-color: white;
+}
+.specialB:hover p {
+    color: green;
+}
+
+/* ------------------ */
+
 @media (max-width: 992px) {
     .diagram-container {
         width: 100%;
