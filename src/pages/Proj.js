@@ -30,7 +30,7 @@ export const Proj = () => {
                     Javascript, HTML and CSS, and am consistently upgrading my
                     skills to tackle more complex problems. You are welcome to
                     view the code and any comments or suggestions are highly
-                    appreciated
+                    appreciated.
                 </h4>
             </div>
 
