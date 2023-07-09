@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { myProjects } from '../helpers/Data';
 import '../styles/ProjectDisplay.css';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 // import dsl from '../assets/cocktail.jpg';
 // import dsl from '../assets/dsl.jpg';
 import dsl from '../assets/unsplash.JPG';
@@ -10,19 +11,22 @@ const ProjectDisplay = () => {
     const { codeIcon, apiIcon, backIcon } = myProjects;
     const { state } = useLocation();
     const { title, url, id, img, item } = state;
-    const { about, githubLink, hasApi, image, otherImg } = item.fields;
-    console.log('state: ', state);
+    const { about, githubLink, hasApi, image, otherImg, apiUsed } = item.fields;
 
     return (
         <section className='project'>
+            {/* back link */}
             <Link to={'/projects'} className='btn' id='back-btn'>
                 <div className='backIcon'>
                     <img src={backIcon} alt='' />
                 </div>
                 Back
             </Link>
-            <h1> {title}</h1>
 
+            {/* title */}
+            <h1 style={{ textTransform: 'uppercase' }}> {title}</h1>
+
+            {/* app image */}
             <div className='img-container'>
                 <a href={url} target='_blank' rel='noreferrer'>
                     <img src={img} alt={`pic`} />
@@ -38,23 +42,41 @@ const ProjectDisplay = () => {
             >
                 Live Link
             </a>
-            <p>about the app</p>
+
+            {/* about section */}
+
+            <div className='richText'>{documentToReactComponents(about)}</div>
+            {console.log('ABOUT: ', about.content)}
 
             <div className='link-container'>
-                <a href={url} className='btn codeBtn'>
-                    View Code
+                {/* github link */}
+                <a
+                    href={githubLink}
+                    className='btn codeBtn'
+                    target='_blank'
+                    rel='noreferrer'
+                >
+                    view code
                     <div id='codeIcon'>
                         <img src={codeIcon} alt='' />
                     </div>
                 </a>
-                {
-                    <a href={'http://google.ca'} className='btn apiBtn'>
+
+                {/* api used */}
+
+                {hasApi && (
+                    <a
+                        href={apiUsed}
+                        className='btn apiBtn'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
                         api-used
                         <div id='apiIcon'>
                             <img src={apiIcon} alt='' />
                         </div>
                     </a>
-                }
+                )}
             </div>
         </section>
     );
