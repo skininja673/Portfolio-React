@@ -3,21 +3,21 @@ import React from 'react';
 import '../styles/Proj.css';
 import { useFetchProjects } from '../fetchProjects';
 import { Link } from 'react-router-dom';
-
-// import dsl from '../assets/cocktail.jpg';
-// import dsl from '../assets/dsl.jpg';
-// import dsl from '../assets/unsplash.JPG';
-// import dsl from '../assets/erd.JPG';
+import Spinner from '../components/Spinner';
 
 export const Proj = () => {
     const { loading, projects } = useFetchProjects();
+    let test = true;
 
+    // if (loading) {
+    //     return (
+    //         <section className='projecs'>
+    //             <h2>loading...</h2>
+    //         </section>
+    //     );
+    // }
     if (loading) {
-        return (
-            <section className='projecs'>
-                <h2>loading...</h2>
-            </section>
-        );
+        return <Spinner />;
     }
 
     return (
