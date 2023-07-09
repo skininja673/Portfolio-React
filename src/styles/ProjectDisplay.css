@@ -128,6 +128,12 @@
     font-size: 1rem;
 }
 
+.cust-container {
+    /* border: 3px solid red; */
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
 /* ------------------- */
 @media only screen and (max-width: 826px) {
     .project p {
@@ -186,6 +192,7 @@
     font-size: 1rem; */
     }
 }
+
 @media only screen and (max-width: 485px) {
     .link-container {
         width: 100%;

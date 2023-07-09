@@ -11,7 +11,16 @@ const ProjectDisplay = () => {
     const { codeIcon, apiIcon, backIcon } = myProjects;
     const { state } = useLocation();
     const { title, url, id, img, item } = state;
-    const { about, githubLink, hasApi, image, otherImg, apiUsed } = item.fields;
+    const {
+        about,
+        githubLink,
+        hasApi,
+        hasDiagram,
+        hasDesign,
+        apiUsed,
+        designLink,
+        diagram,
+    } = item.fields;
 
     return (
         <section className='project'>
@@ -34,14 +43,39 @@ const ProjectDisplay = () => {
             </div>
 
             {/* live link */}
-            <a
-                href={url}
-                className='liveLink liveLink2'
-                target='_blank'
-                rel='noreferrer'
-            >
-                Live Link
-            </a>
+            <div className='cust-container'>
+                <a
+                    href={url}
+                    className='liveLink liveLink2'
+                    target='_blank'
+                    rel='noreferrer'
+                >
+                    Live Link
+                </a>
+
+                {/* design link */}
+                {hasDesign && (
+                    <a
+                        href={designLink}
+                        className='liveLink liveLink2'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        Design Link
+                    </a>
+                )}
+
+                {/* diagram image */}
+                {hasDiagram && (
+                    <Link
+                        to='/diagram'
+                        className='liveLink liveLink2'
+                        state={diagram}
+                    >
+                        ERD Relationship
+                    </Link>
+                )}
+            </div>
 
             {/* about section */}
 

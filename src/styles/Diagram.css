@@ -1,0 +1,26 @@
+.diagram-container {
+    max-width: 1500px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.diagram-title {
+    text-align: center;
+    color: var(--blueColor);
+}
+
+.diagram-image {
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    width: 70%;
+}
+
+@media (max-width: 992px) {
+    .diagram-container {
+        width: 100%;
+    }
+    .diagram-image {
+        width: 95%;
+    }
+}

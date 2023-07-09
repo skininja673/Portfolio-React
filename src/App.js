@@ -8,6 +8,7 @@ import ProjectDisplay from './pages/ProjectDisplay';
 import ContactForm from './pages/ContactForm';
 import Experience from './pages/Experience';
 import ErrorPage from './pages/ErrorPage';
+import Diagram from './components/Diagram';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path='/project/:id' element={<ProjectDisplay />} />
                     <Route path='/experience' element={<Experience />} />
                     <Route path='/contact' element={<ContactForm />} />
+                    <Route path='/diagram' element={<Diagram />} />
                     <Route path='*' element={<ErrorPage />} />
                 </Routes>
                 <Footer />
