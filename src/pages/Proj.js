@@ -27,7 +27,7 @@ export const Proj = () => {
                 {/* <span className='underline' /> */}
                 <h4>
                     Welcome to my projects page! I enjoy coding in React,
-                    Javascript, HTML and CSS, and am consistently upgrading my
+                    Javascript, HTML and CSS, and I am consistently upgrading my
                     skills to tackle more complex problems. You are welcome to
                     view the code and any comments or suggestions are highly
                     appreciated.
