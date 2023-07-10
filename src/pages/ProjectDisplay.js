@@ -135,7 +135,7 @@ const ProjectDisplay = () => {
 
 export default ProjectDisplay;
 
-// adjusted size for image:  W: 1280px,  H: 682px
+// adjusted size for image:  W: 1183px,  H: 630px
 
 // function ProjectDisplay() {
 //     const { id } = useParams();

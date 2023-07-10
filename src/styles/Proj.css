@@ -42,49 +42,34 @@
 }
 
 .projecs-center {
-    width: 70vw;
+    /* width: 70vw; */
+    width: 70%;
     /* max-width: 1120px; */
     margin: 0 auto;
     margin-top: 3rem;
     display: grid;
     gap: 2rem;
+    /* border: 2px solid red; */
     /* -------------- */
 }
 
 .projec {
-    background: white;
+    width: 100%;
     background: var(--lightBlueTint);
+    background: rgb(195, 205, 224);
 
     /* display: block; */
     border-radius: 5px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease-in-out all;
     text-decoration: none;
-    /* border: 2px solid red; */
+    /* border: 2px solid blue; */
 }
 
 .projec:hover {
     transform: scale(1.05);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
-
-.img {
-    max-width: 100%;
-    /* padding: 10px 5px; */
-    padding: 20px;
-
-    display: block;
-    object-fit: cover;
-    height: 18rem;
-    width: 100%;
-
-    margin: 0 auto;
-    /* border-top-right-radius: 0.25rem;
-    border-top-left-radius: 0.25rem; */
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
 .projec .img {
     /* height: 15rem;
     width: 100%; */
@@ -95,11 +80,36 @@
     /* border: 2px solid black; */
 }
 
+.img {
+    /* max-width: 100%; */
+    /* padding: 10px 5px; */
+
+    /* padding: 0px 5px; */
+
+    display: block;
+    /* object-fit: cover; */
+    object-fit: scale-down;
+    /* height: 13rem; */
+    height: 14rem;
+    width: 100%;
+
+    margin: 0 auto;
+    /* border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* padding: 2px 2px 0px 2px; */
+    padding-top: 5px;
+
+    /* border: 2px solid red; */
+}
+
 .proj-title {
     /* border: 2px solid black; */
     text-align: center;
     padding: 0.1rem 0;
     color: var(--blueColor);
+
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -112,19 +122,19 @@
     }
     .projec {
         /* border: 2px solid blue; */
-        width: 100%;
+        width: 89%;
+        margin: 0 auto;
     }
     .img {
         /* border: 2px solid var(--lightBlueColor);  */
         /* border: 2px solid rgba(0, 0, 0, 0.4); */
         /* object-fit: scale-down; */
         object-fit: scale-down;
-        height: 9rem;
+        height: 10rem;
         width: 100%;
-        padding: 0;
 
         /* padding: 3px 0px; */
-        padding-top: 1rem;
+        /* padding-top: 1rem; */
 
         /* border: 2px solid red; */
     }
